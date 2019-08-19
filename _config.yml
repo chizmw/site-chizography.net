@@ -20,6 +20,13 @@ baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: chizcw
 github_username:  chiselwright
 
+socialmedia:
+  facebook:       chiselwright
+  github:         chiselwright
+  instagram:      chizcw
+  linkedin:       chiselwright
+  twitter:        chizcw
+
 # Build settings
 markdown: kramdown
 theme: minima
