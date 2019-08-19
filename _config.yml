@@ -13,16 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+#title: chizography
+email: chisel@chizography.net
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+#url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: chizcw
+github_username:  chiselwright
 
 # Build settings
 markdown: kramdown
@@ -41,3 +37,35 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+
+# this chunk is based on:
+# - https://brianm.me/posts/how-to-make-jekyll-site-blog
+
+# seo
+title: chizography
+description: >- # this means to ignore newlines until "baseurl:"
+    Chisel's personal website: a little bit of everything.
+url: https://chizography.net
+
+twitter:
+  username: chizcw
+
+facebook:
+  app_id:
+  publisher:
+  admins:
+
+logo: /assets/images/BM-Logo.png
+
+social:
+  name: Chisel Wright
+  links:
+    - https://github.com/chiselwright
+    - https://facebook.com/chiselwright
+    - https://twitter.com/chizcw
+    - https://www.instagram.com/chizcw
+    - https://www.last.fm/user/chiselwright
+    - https://www.linkedin.com/in/chiselwright
+    - https://steamcommunity.com/id/chizcw
+    - https://www.youtube.com/c/ChiselWright
