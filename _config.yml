@@ -20,6 +20,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: chizcw
 github_username:  chiselwright
 
+# https://jekyllrb.com/docs/permalinks/
+permalink: /blog/:year/:month/:day/:title:output_ext
+
 socialmedia:
   facebook:       chiselwright
   github:         chiselwright
