@@ -3,7 +3,7 @@ layout: post
 title:  "Welcome to Chizography!"
 date:   2019-08-19 19:46:36 +0100
 categories: [Chizography, News]
-tags: [nginx, zucchini, jekyll, news, docker]
+tags: nginx zucchini jekyll news docker
 ---
 This post is to mark the start of a new era in my personal website.
 

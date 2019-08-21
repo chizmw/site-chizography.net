@@ -25,11 +25,22 @@ layout: default
   {% else %}
     {% assign categories = page.categories %}
   {% endif %}
-  {% for category in categories %}
-  <a href="{{site.baseurl}}/blog/categories/#{{category|slugize}}">{{category}}</a>
-  {% unless forloop.last %}&nbsp;{% endunless %}
+  {%- for category in categories -%}
+  <a class="post-category-label" href="{{site.baseurl}}/blog/categories/#{{category|slugize}}"><nobr>{{category}}</nobr></a>
+  {%- unless forloop.last -%}&nbsp;{%- endunless -%}
   {% endfor %}
 </div>
+
+{% if page.tags.size != 0 %}
+<div class="post-tags">
+<span>
+  {% for tag in page.tags %}
+    {% capture tag_name %}{{ tag }}{% endcapture %}
+    <a href="/tag/{{ tag_name }}"><code class="highlighter-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+  {% endfor %}
+</span>
+</div>
+{% endif %}
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
