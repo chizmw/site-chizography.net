@@ -2,6 +2,7 @@
 layout: page
 permalink: /blog/categories/
 title: Categories
+exclude: true
 ---
 
 
