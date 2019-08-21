@@ -1,0 +1,6 @@
+#!/bin/bash
+TAGDIR=$(dirname $0)/../tag
+
+rm -v ${TAGDIR}/*md;
+$(dirname $0)/jekyll-tagger;
+ls $TAGDIR;
