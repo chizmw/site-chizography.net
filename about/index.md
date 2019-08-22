@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+menufontawesome: fas fa-info-circle
 ---
 
 Before you ask: Yes, Chisel is my real name. No, Chisel is not my birth name.
