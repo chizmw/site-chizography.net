@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Android Apps
-permalink: /droid
+permalink: /droid/
 menufontawesome: fad fa-mobile-alt
 ---
 

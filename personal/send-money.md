@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Send Money
-permalink: /send-money
+permalink: /send-money/
 menufontawesome: fad fa-credit-card-front
 ---
 
