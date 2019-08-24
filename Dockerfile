@@ -25,7 +25,7 @@ ENV     JEKYLL_ENV      production
 RUN     jekyll build --destination /tmp/site
 RUN     ls -larth /tmp/site
 
-RUN apk install tree && tree /srv/jekyll && tree /tmp/site
+RUN apk add tree && tree /srv/jekyll && tree /tmp/site
 
 #-----
 FROM    kyma/docker-nginx
