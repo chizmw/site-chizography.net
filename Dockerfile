@@ -15,13 +15,13 @@ RUN     bundle install
 COPY    .           /srv/jekyll/
 
 # regenerate tags
-RUN echo weird shit happening - need to investigate
-RUN bin/update-tags
+RUN     echo weird shit happening - need to investigate
+RUN     bin/update-tags
+RUN     tree /srv/jekyll/
 
 ENV     JEKYLL_ENV      production
-RUN     jekyll build --verbose --destination /tmp/site
-
-RUN tree /srv/jekyll && tree /tmp/site
+RUN     jekyll build --destination /tmp/site
+RUN     tree /tmp/site
 
 #-----
 FROM    kyma/docker-nginx

@@ -1,6 +1,9 @@
 #!/bin/bash
 TAGDIR=$(dirname $0)/../tag
 
+echo [update-tags] $TAGDIR
+
 rm -frv ${TAGDIR}/;
 $(dirname $0)/jekyll-tagger;
 ls -larth $TAGDIR;
+echo [update-tags] Done
