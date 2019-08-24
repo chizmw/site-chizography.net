@@ -3,6 +3,6 @@ layout: tagpage
 title: "Tag: jekyll"
 tag: jekyll
 robots: noindex
-permalink: /tag/jekyll
+permalink: /tag/jekyll/
 exclude: true
 ---
