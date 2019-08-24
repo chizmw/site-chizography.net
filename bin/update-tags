@@ -1,6 +1,6 @@
 #!/bin/bash
 TAGDIR=$(dirname $0)/../tag
 
-rm -v ${TAGDIR}/*md;
+rm -frv ${TAGDIR}/;
 $(dirname $0)/jekyll-tagger;
-ls $TAGDIR;
+ls -larth $TAGDIR;
