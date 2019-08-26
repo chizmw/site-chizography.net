@@ -4,24 +4,30 @@ FROM jekyll/jekyll:latest as jekyll
 # presumably we could write in in ruby, but meh
 RUN apk add --no-cache python3 tree
 
-WORKDIR             /srv/jekyll/
+# DO NOT USE /srv/jekyll
+# THERE'S A VOLUME in jekyll/jekyll:latest
+# USING THAT LOCATION IS LIKE A BLACK HOLE FOR ANY FILES
+# IN THERE
+# we are building under our own rules, so we just work somewhere else
+ENV JEKYLL_ENV      production
 
-ENV GEM_HOME        /tmp/gems
-ENV PATH            /tmp/gems/bin:$PATH
-
-COPY    Gemfile     /srv/jekyll/
+WORKDIR             /tmp/jekyll/
+COPY    Gemfile*    /tmp/jekyll/
 RUN     bundle install
 
-COPY    .           /srv/jekyll/
+# copy in all the local things
+COPY    .           /tmp/jekyll/
 
 # regenerate tags
-RUN     echo weird shit happening - need to investigate
 RUN     bin/update-tags
-RUN     tree /srv/jekyll/
+RUN     tree /tmp/jekyll/
 
-ENV     JEKYLL_ENV      production
 RUN     jekyll build --destination /tmp/site
 RUN     tree /tmp/site
+
+###
+### Next part of the multi-stage build
+###
 
 #-----
 FROM    kyma/docker-nginx
