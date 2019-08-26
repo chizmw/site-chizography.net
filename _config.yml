@@ -66,7 +66,7 @@ facebook:
   publisher:
   admins:
 
-logo: /assets/images/BM-Logo.png
+logo: /assets/images/chisel_greybeard_and_games.jpg
 
 social:
   name: Chisel Wright
@@ -79,3 +79,9 @@ social:
     - https://www.linkedin.com/in/chiselwright
     - https://steamcommunity.com/id/chizcw
     - https://www.youtube.com/c/ChiselWright
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/chisel_greybeard_and_games.jpg
