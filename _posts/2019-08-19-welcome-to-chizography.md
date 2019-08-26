@@ -2,6 +2,7 @@
 layout: post
 title:  "Welcome to Chizography!"
 date:   2019-08-19 19:46:36 +0100
+author: Chisel
 categories: [Chizography, News]
 tags: nginx zucchini jekyll news docker
 ---

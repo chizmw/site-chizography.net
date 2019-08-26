@@ -2,6 +2,7 @@
 layout: post
 title:  "I Play Games"
 date:   2019-08-24 19:46:36 +0100
+author: Chisel
 categories: [Hobbies, Gaming]
 tags: hobby games gaming
 ---
