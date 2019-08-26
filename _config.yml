@@ -48,6 +48,9 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+feed:
+  path: /blog/feed.xml
+
 
 # this chunk is based on:
 # - https://brianm.me/posts/how-to-make-jekyll-site-blog
