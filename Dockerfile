@@ -22,7 +22,9 @@ COPY    .           /tmp/jekyll/
 RUN     bin/update-tags
 RUN     tree /tmp/jekyll/
 
-RUN     jekyll build --destination /tmp/site
+# JEKYLL_OVERRIDES is set where required in 01.nginx.proxy/docker-compose.yml
+RUN     jekyll build --destination /tmp/site --config _config.yml,${JEKYLL_OVERRIDES}
+RUN     grep og:image _site/index.html
 RUN     tree /tmp/site
 
 ###
