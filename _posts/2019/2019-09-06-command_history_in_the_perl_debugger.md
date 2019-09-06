@@ -45,4 +45,4 @@ Add this to ~/.perldb
 
 <small>(This is a repost of [a post made to blogs.perl.org in 2013][post-2013])</small>
 
-[post-2011]: http://blogs.perl.org/users/chisel/2013/01/command-history-in-the-perl-debugger.html
+[post-2013]: http://blogs.perl.org/users/chisel/2013/01/command-history-in-the-perl-debugger.html
