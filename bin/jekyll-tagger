@@ -16,12 +16,21 @@ import os
 post_dir = os.getcwd() + '/_posts/'
 tag_dir =  os.getcwd() + '/tag/'
 
+debug = False
+
+# top level filenames
 filenames = glob.glob(post_dir + '*md')
+
+# scan one level deeper, e.g. 2019/ directories
+for r,d,f in os.walk(post_dir):
+    for dirname in d:
+        fulldirname=os.path.join(r,dirname)
+        filenames.extend(glob.glob(fulldirname + '/*md'))
 
 total_tags = []
 for filename in filenames:
     f = open(filename, 'r', encoding='utf8')
-    print('scanning: ', filename)
+    print('? scanning: ', filename)
     crawl = False
     for line in f:
         if crawl:
@@ -41,24 +50,31 @@ total_tags = set(total_tags)
 
 old_tags = glob.glob(tag_dir + '*.md')
 for tag in old_tags:
-    print('removing old tag: ', tag)
+    if debug:
+        print('- removing old tag: ', tag)
     os.remove(tag)
 
 if not os.path.exists(tag_dir):
-    print('making directory: ', tag_dir)
+    if debug:
+        print('d making directory: ', tag_dir)
     os.makedirs(tag_dir)
 
 for tag in total_tags:
     tag_filename = tag_dir + tag + '.md'
-    #print("writing to: ", tag_filename)
+    print("+ writing to: ", tag_filename)
     f = open(tag_filename, 'w')
     write_str = '---\nlayout: tagpage\ntitle: \"Tag: ' + tag + '\"\ntag: ' + tag + '\nrobots: noindex\npermalink: /tag/' + tag + '/\nexclude: true\n---\n'
     f.write(write_str)
     f.close()
-print("Tags generated, count", total_tags.__len__())
 for tag in total_tags:
     tag_filename = tag_dir + tag + '.md'
-    if(os.path.exists(tag_filename)):
-        print('file exists: ', tag_filename)
-    else:
-        print('file missing: ', tag_filename)
+    if debug:
+        if(os.path.exists(tag_filename)):
+            print('f file exists: ', tag_filename)
+        else:
+            print('file missing: ', tag_filename)
+
+print("Tags generated, count", total_tags.__len__())
+taglist=list(total_tags)
+taglist.sort()
+print(taglist)
