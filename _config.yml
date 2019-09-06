@@ -51,6 +51,8 @@ plugins:
 feed:
   path: /blog/feed.xml
 
+# Google Analytics
+google_analytics: UA-25425412-1
 
 # this chunk is based on:
 # - https://brianm.me/posts/how-to-make-jekyll-site-blog
