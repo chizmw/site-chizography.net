@@ -29,9 +29,8 @@ ENV JEKYLL_OVERRIDES=${jekyll_overrides:-}
 # JEKYLL_OVERRIDES is set where required in 01.nginx.proxy/docker-compose.yml
 RUN     echo Using: --config _config.yml,${JEKYLL_OVERRIDES}
 RUN     jekyll build --destination /tmp/site --config _config.yml,${JEKYLL_OVERRIDES}
-RUN     grep og:image _site/index.html ||true
-RUN     grep og:image /tmp/site/index.html ||true
 RUN     tree /tmp/site
+RUN     date
 
 ###
 ### Next part of the multi-stage build
