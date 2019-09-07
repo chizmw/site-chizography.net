@@ -8,6 +8,11 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
+
+# https://mehmandarov.com/jekyll-content-on-time/#targetText=Setting%20the%20time%20zone%20in,%2C%20e.g.%2C%20Europe%2FOslo%20.
+# set timezone
+timezone: Europe/London
+
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
