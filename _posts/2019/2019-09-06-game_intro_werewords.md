@@ -8,6 +8,8 @@ categories: [Gaming, Introduction, Teaching]
 tags: werewolf werewords teaching script introduction
 ---
 
+![](/assets/images/page/werewords.jpg){: style="text-align: center;"}
+
 > In Werewords, players guess a secret word by asking "yes" or "no" questions.
 
 #### The Fluffy backstory
