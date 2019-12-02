@@ -13,7 +13,7 @@ ENV JEKYLL_ENV      production
 
 WORKDIR             /tmp/jekyll/
 COPY    Gemfile*    /tmp/jekyll/
-RUN     bundle install
+RUN     bundle install --full-index
 
 # copy in all the local things
 COPY    .           /tmp/jekyll/
