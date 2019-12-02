@@ -3,6 +3,7 @@ layout: page
 title: Privacy Policy
 permalink: /privacy/
 menufontawesome: fas fa-user-secret
+exclude: true
 ---
 
 <div class="container">
