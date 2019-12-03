@@ -1,4 +1,4 @@
-FROM jekyll/jekyll:latest as jekyll
+FROM jekyll/jekyll:4 as jekyll
 
 # for the tag script
 # presumably we could write in in ruby, but meh
