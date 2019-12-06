@@ -15,7 +15,7 @@ exclude: true
  >By accessing the website at <a
 href="http://chizography.net"
 target="_blank"><u>http://chizography.net</u></a>, or any of the associated
-apps at <a 
+apps at <a
 href="https://play.google.com/store/apps/developer?id=chizography"
 target="_blank">https://play.google.com/store/apps/developer?id=chizography</a>,
 you are agreeing to be bound by these terms of service, all applicable laws and
@@ -29,11 +29,11 @@ temporarily download one copy of the materials (information or software) on
 chizography&#39;s website for personal, non-commercial transitory viewing only.
 This is the grant of a license, not a transfer of title, and under this license
 you may not:<ol ><li  class="zfr3Q
-TYR86d">modify or copy the materials;</li><li 
+TYR86d">modify or copy the materials;</li><li
 >use the materials for any commercial purpose, or for any
-public display (commercial or non-commercial);</li><li 
+public display (commercial or non-commercial);</li><li
 >attempt to decompile or reverse engineer any software
-contained on chizography&#39;s website;</li><li 
+contained on chizography&#39;s website;</li><li
 >remove any copyright or other proprietary notations from
 the materials; or</li><li  >transfer
 the materials to another person or &quot;mirror&quot; the materials on any
@@ -62,8 +62,8 @@ chizography&#39;s website, even if chizography or a chizography authorized
 representative has been notified orally or in writing of the possibility of
 such damage. Because some jurisdictions do not allow limitations on implied
 warranties, or limitations of liability for consequential or incidental
-damages, these limitations may not apply to you.</p><h3 
->5. Accuracy of materials</h3><p 
+damages, these limitations may not apply to you.</p><h3
+>5. Accuracy of materials</h3><p
 >The materials appearing on chizography&#39;s website could
 include technical, typographical, or photographic errors. chizography does not
 warrant that any of the materials on its website are accurate, complete or
@@ -89,12 +89,12 @@ chizography&#39;s policy to respect your privacy regarding any information we
 may collect while operating our website. Accordingly, we have developed this
 privacy policy in order for you to understand how we collect, use, communicate,
 disclose and otherwise make use of personal information. We have outlined our
-privacy policy below.</p><ul ><li 
+privacy policy below.</p><ul ><li
 >We will collect personal information by lawful and fair
 means and, where appropriate, with the knowledge or consent of the individual
 concerned.</li><li  >Before or at the
 time of collecting personal information, we will identify the purposes for
-which information is being collected.</li><li 
+which information is being collected.</li><li
 >We will collect and use personal information solely for
 fulfilling those purposes specified by us and for other ancillary purposes,
 unless we obtain the consent of the individual concerned or as required by
