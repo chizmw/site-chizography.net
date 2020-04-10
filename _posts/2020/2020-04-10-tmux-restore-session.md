@@ -7,6 +7,11 @@ categories: [Tech]
 tags: tmux tech configuration
 ---
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+![](/assets/posts/2020-04-10-tmux-restore-session/terminal-screengrab.png){: style="text-align: center;" class="imagedropshadow" }
+
 ## Introduction
 
 Part of my working environment changed recently, causing me to investigate ways
@@ -30,8 +35,6 @@ make things behave as expected, so after sinking more than a few hours of my
 personal time into making this work properly, I decided to make a version of
 the final instructions available on my own site, so I could share the fruits
 of my labour with anyone.
-
-![](/assets/posts/2020-04-10-tmux-restore-session/terminal-screengrab.png){: style="text-align: center;" class="imagedropshadow" }
 
 ## Pre-requisites
 
