@@ -8,11 +8,33 @@ categories: [Gaming, Introduction, Teaching]
 tags: werewolf werewords teaching script introduction
 ---
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [The Explanation](#the-explanation)
+  - [The Fluffy backstory](#the-fluffy-backstory)
+  - [Winning And Losing](#winning-and-losing)
+  - [Villagers](#villagers)
+  - [The General Gameplay](#the-general-gameplay)
+  - [End Of The Round](#end-of-the-round)
+  - [Roles](#roles)
+  - [The Mayor](#the-mayor)
+- [SETUP](#setup)
+  - [One Time Setup](#one-time-setup)
+  - [Game Setup](#game-setup)
+  - [You're Almost Ready To Start!](#youre-almost-ready-to-start)
+  - [Time To Play!](#time-to-play)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ![](/assets/images/page/werewords.jpg){: style="text-align: center;"}
+
+## The Explanation
 
 > In Werewords, players guess a secret word by asking "yes" or "no" questions.
 
-#### The Fluffy backstory
+### The Fluffy backstory
 
 Look at the people around you and explain:
 
@@ -31,12 +53,12 @@ Look at the people around you and explain:
 Pause. Let people ponder the fluffy backstory.
 
 
-#### Winning And Losing
+### Winning And Losing
 
 > So, how do you win?
 > It depends what your role is in the game.
 
-#### Villagers
+### Villagers
 
 > If you're a _Villager_ you win if the Villagers:
 > * guess the word, and the Seer is *NOT* killed by a werewolf.
@@ -51,7 +73,7 @@ Make sure people know to listen to the next piece of information.
 > Your role is SECRET during each round. You are the only person who knows
 > whether you are a Villager oe werewolf.
 
-#### The General Gameplay
+### The General Gameplay
 
 > A round will be timed.
 
@@ -69,7 +91,7 @@ Make sure people know to listen to the next piece of information.
 
 > THE MAYOR MUST NOT SPEAK.
 
-#### End Of The Round
+### End Of The Round
 
 > If the word is guessed correctly, the werewolves have a chance to win by
 > guessing who the Seer is.
@@ -80,7 +102,7 @@ Make sure people know to listen to the next piece of information.
 > Don't worry about remembering all of this - there's an app that will help
 > run the game.
 
-#### Roles
+### Roles
 
 > Now that you've got an idea how the game plays, I should tell you about some
 > of the roles.
@@ -123,7 +145,7 @@ Most games play perfectly well with the roles described above.
 You do not want to overload players with too many roles during their first
 couple of plays.
 
-#### The Mayor
+### The Mayor
 
 > I need to tell you something else about the Mayor but it's slightly easier
 > if we do the setup first.
@@ -134,7 +156,7 @@ Make sure you've installed [the app][app-link] and that your device is LOUD
 ENOUGH or connected to an external speaker that's loud enough. Players will
 need to hear instructions dictated by the app.
 
-#### <i class="fas fa-mobile-alt"></i> [Get The App][app-link]
+<i class="fas fa-mobile-alt"></i> [Get The App][app-link]
 
 ### One Time Setup
 
@@ -212,7 +234,7 @@ everyone.
 > Be careful in your lies though ... you don't want to get caught, and there's
 > a Seer in the village.
 
-#### You're Almost Ready To Start!
+### You're Almost Ready To Start!
 
 > That's pretty much everything you need to start playing.
 
@@ -222,7 +244,7 @@ everyone.
 > discuss what went wrong and play again. It's quick enough to play that it's
 > not the end of the world if things go a bit wrong.
 
-#### Time To Play!
+### Time To Play!
 
 > You all need to be able to SEE the phone
 
