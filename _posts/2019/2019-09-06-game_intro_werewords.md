@@ -28,7 +28,7 @@ tags: werewolf werewords teaching script introduction
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-![](/assets/images/page/werewords.jpg){: style="text-align: center;"}
+![](/assets/images/page/werewords.jpg){: class="imagecenter imagedropshadow"}
 
 ## The Explanation
 

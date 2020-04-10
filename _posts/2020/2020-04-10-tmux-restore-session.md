@@ -28,7 +28,7 @@ tags: tmux tech configuration
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-![](/assets/posts/2020-04-10-tmux-restore-session/terminal-screengrab.png){: style="text-align: center;" class="imagedropshadow" }
+![](/assets/posts/2020-04-10-tmux-restore-session/terminal-screengrab.png){: class="imagedropshadow imagecenter" }
 
 ## Introduction
 
@@ -228,7 +228,7 @@ You can test the restore works by:
 - `tmux`
 - wait a couple of seconds and your last saved session should be restored
 
-![](/assets/posts/2020-04-10-tmux-restore-session/terminal-tmux.conf.png){: style="text-align: center;" class="imagedropshadow" }
+![](/assets/posts/2020-04-10-tmux-restore-session/terminal-tmux.conf.png){: class="imagedropshadow imagecenter" }
 
 
 ## Further Reading
