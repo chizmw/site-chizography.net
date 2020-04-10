@@ -1,19 +1,19 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [Who's First](#whos-first)
-- [SpyTimer](#spytimer)
-- [SpyTimer FREE](#spytimer-free)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 ---
 layout: page
 title: Android Apps
 permalink: /droid/
 menufontawesome: fad fa-mobile-alt
 ---
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Who's First](#whos-first)
+- [SpyTimer](#spytimer)
+- [SpyTimer FREE](#spytimer-free)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ### Who's First
 
