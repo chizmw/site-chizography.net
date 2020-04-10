@@ -1,12 +1,14 @@
+---
 # Welcome to Jekyll!
-#
+
 # This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
+# which you are expected to set up once and rarely edit after that. If you
+# find yourself editing this file very often, consider using Jekyll's data
+# files feature for the data you need to update frequently.
 #
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# For technical reasons, this file is *NOT* reloaded automatically when you
+# use 'bundle exec jekyll serve'. If you change this file, please restart the
+# server process.
 
 
 # https://mehmandarov.com/jekyll-content-on-time/#targetText=Setting%20the%20time%20zone%20in,%2C%20e.g.%2C%20Europe%2FOslo%20.
@@ -18,22 +20,23 @@ timezone: Europe/London
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-#title: chizography
+# title: chizography
 email: chisel@chizography.net
-baseurl: "" # the subpath of your site, e.g. /blog
-#url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# the subpath of your site, e.g. /blog
+baseurl: ""
+# url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: chizcw
-github_username:  chiselwright
+github_username: chiselwright
 
 # https://jekyllrb.com/docs/permalinks/
 permalink: /blog/:year/:month/:day/:title:output_ext
 
 socialmedia:
-  facebook:       chiselwright
-  github:         chiselwright
-  instagram:      chizcw
-  linkedin:       chiselwright
-  twitter:        chizcw
+  facebook: chiselwright
+  github: chiselwright
+  instagram: chizcw
+  linkedin: chiselwright
+  twitter: chizcw
 
 # Build settings
 markdown: kramdown
@@ -74,7 +77,7 @@ twitter:
   username: chizcw
 
 facebook:
-  app_id:       920275311667337
+  app_id: 920275311667337
   publisher:
   admins:
 
