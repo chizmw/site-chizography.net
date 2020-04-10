@@ -6,4 +6,6 @@
   {%- if site.socialmedia.linkedin  -%}<li><a href="https://www.linkedin.com/in/{{ site.socialmedia.linkedin | cgi_escape | escape }}"><i class="fab fa-linkedin"></i> <span class="username">{{ site.socialmedia.linkedin| escape }}</span></a></li>{%- endif -%}
 
   {%- if site.rss -%}<li><a href="{{ 'feed.xml' | relative_url }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg> <span>{{ site.rss | escape }}</span></a></li>{%- endif -%}
+
+  <li><a href="https://webbkoll.dataskydd.net/en/results?url={{ site.url|cgi_escape|escape }}"><i class="fad fa-user-shield"></i> Privacy Scans</a></li>
 </ul>
