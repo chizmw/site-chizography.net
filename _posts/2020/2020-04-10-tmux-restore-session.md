@@ -3,11 +3,29 @@ layout: post
 title:  "Configuring tmux"
 date:   2020-04-10 02:03:04 +0000
 author: Chisel
+image:  /assets/posts/2020-04-10-tmux-restore-session/terminal-screengrab.png
 categories: [Tech]
 tags: tmux tech configuration
 ---
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Introduction](#introduction)
+- [Pre-requisites](#pre-requisites)
+  - [tmux](#tmux)
+  - [tpm](#tpm)
+  - [Know your tmux prefix](#know-your-tmux-prefix)
+- [.tmux.conf](#tmuxconf)
+- [custom `tmux` configuration](#custom-tmux-configuration)
+- [Troubleshooting](#troubleshooting)
+  - [Confirming Continuum is 'active'](#confirming-continuum-is-active)
+  - [Confirming a save interval has been set](#confirming-a-save-interval-has-been-set)
+  - [Confirming the resurrection folder exists](#confirming-the-resurrection-folder-exists)
+  - [Testing Session Restores](#testing-session-restores)
+- [Further Reading](#further-reading)
+
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ![](/assets/posts/2020-04-10-tmux-restore-session/terminal-screengrab.png){: style="text-align: center;" class="imagedropshadow" }
