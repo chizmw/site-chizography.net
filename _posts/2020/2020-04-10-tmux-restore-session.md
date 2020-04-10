@@ -1,11 +1,37 @@
 ---
 layout: post
 title:  "Configuring tmux"
-date:   2020-04-10 02:03:04 +0100
+date:   2020-04-10 02:03:04 +0000
 author: Chisel
 categories: [Tech]
 tags: tmux tech configuration
 ---
+
+## Introduction
+
+Part of my working environment changed recently, causing me to investigate ways
+to preserve a `tmux` session over a reboot.
+
+I initially investigated a short script, which didn't pas muster for two
+reasons:
+
+1. it was manual to save and restore
+2. I couldn't make it behave sesnsibly
+3. it didn't restore running tasks (where possible)
+
+A short detour via a Google search led me to the wonders of `tmux` plugins.
+
+I'd been using a messy and klunky `tmux` configuration for so long this felt
+like the perfect time to kill two birds with one stone.
+
+I felt this would be useful at work, so initially wrote this as some
+instructions to get them off the4 starting blocks. Annoyingly I couldn't quite
+make things behave as expected, so after sinking more than a few hours of my
+personal time into making this work properly, I decided to make a version of
+the final instructions available on my own site, so I could share the fruits
+of my labour with anyone.
+
+![](/assets/posts/2020-04-10-tmux-restore-session/terminal-screengrab.png){: style="text-align: center;" class="imagedropshadow" }
 
 ## Pre-requisites
 
@@ -180,6 +206,8 @@ You can test the restore works by:
 - `tmux kill-server`
 - `tmux`
 - wait a couple of seconds and your last saved session should be restored
+
+![](/assets/posts/2020-04-10-tmux-restore-session/terminal-tmux.conf.png){: style="text-align: center;" class="imagedropshadow" }
 
 
 ## Further Reading
