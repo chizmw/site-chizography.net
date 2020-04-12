@@ -19,9 +19,3 @@ repos:
     rev: v1.17.0
     hooks:
       - id: yamllint
-
-  - repo: https://github.com/thlorenz/doctoc
-    rev: v1.4.0
-    hooks:
-      - id: doctoc
-        args: ["_posts/2020/2020-04-10-tmux-restore-session.md"]
