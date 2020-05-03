@@ -12,6 +12,8 @@ image: /assets/posts/2019-08-19-welcome-to-chizography/hey-neon-sign.jpg
 
 This post is to mark the start of a new era in my personal website.
 
+<!--more-->
+
 Moving away from [my home crafted solution][link-zucchini] for templating it's
 been replaced a from-scratch site written in [Jekyll][link-jekyll] and
 hosted using [automated nginx proxy Docker containers][nginx-jwilder].
