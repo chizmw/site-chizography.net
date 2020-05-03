@@ -8,7 +8,7 @@ tags: hobby games gaming
 image: /assets/posts/2019-08-24-I-am-a-gamer/board-games-kids-isometric-illustration.jpg
 ---
 
-![]({{page.image}}){: class="imagedropshadow imagecenter" }
+{% include post-lead-image.md %}
 
 If you know me at all before dicovering this post you won't be even slightly
 surprised to learn what I'm about to say:

@@ -8,7 +8,7 @@ tags: nginx zucchini jekyll news docker
 image: /assets/posts/2019-08-19-welcome-to-chizography/hey-neon-sign.jpg
 ---
 
-![]({{page.image}}){: class="imagedropshadow imagecenter" }
+{% include post-lead-image.md %}
 
 This post is to mark the start of a new era in my personal website.
 

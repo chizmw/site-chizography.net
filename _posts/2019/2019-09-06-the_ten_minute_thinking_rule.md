@@ -8,7 +8,7 @@ tags: etiquette perl repost
 image: /assets/posts/2019-09-06-the_ten_minute_thinking_rule/brain-gear-vector.jpg
 ---
 
-![]({{page.image}}){: class="imagedropshadow imagecenter" }
+{% include post-lead-image.md %}
 
 ## What’s the problem?
 This idea was shared with me during a retrospective session at `$employer` when I was expressing some frustration at people starting to:

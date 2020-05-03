@@ -8,7 +8,7 @@ categories: [Tech]
 tags: tmux tech configuration
 ---
 
-![](/assets/posts/2020-04-10-tmux-restore-session/terminal-screengrab.png){: class="imagedropshadow imagecenter" }
+{% include post-lead-image.md %}
 
 Part of my working environment changed recently, causing me to investigate ways
 to preserve a `tmux` session over a reboot.

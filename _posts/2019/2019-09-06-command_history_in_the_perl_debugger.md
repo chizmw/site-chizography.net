@@ -8,7 +8,7 @@ tags: perl debugger repost
 image: /assets/posts/2019-09-06-command_history_in_the_perl_debugger/lugar-trabajo-programado.jpg
 ---
 
-![]({{page.image}}){: class="imagedropshadow imagecenter" }
+{% include post-lead-image.md %}
 
 I’m always forgetting what pieces I need to make this happen, so I’m writing a note to my future self.
 

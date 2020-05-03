@@ -8,7 +8,7 @@ categories: [Gaming, Introduction, Teaching]
 tags: werewolf werewords teaching script introduction
 ---
 
-![](/assets/images/page/werewords.jpg){: class="imagecenter imagedropshadow"}
+{% include post-lead-image.md %}
 
 Not sure how to explain Werewords to new players? Maybe this will get you and
 your players up to speed.
