@@ -65,3 +65,18 @@ $link-color:            $off-white;
     text-align: center;
     cursor: pointer;
 }
+
+// this stops /blog previews squashing into each other
+// because of the image float
+div.post-content > h2,
+.clearboth {
+    clear: both;
+}
+
+article > p:nth-child(1) > img {
+    height: 150px;
+    width: auto;
+    object-fit: contain;
+    float:left;
+    margin-right: 10px;
+}

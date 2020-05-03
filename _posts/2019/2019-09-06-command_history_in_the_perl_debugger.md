@@ -5,8 +5,14 @@ date:   2019-09-06 02:03:04 +0100
 author: Chisel
 categories: [Tech]
 tags: perl debugger repost
+image: /assets/posts/2019-09-06-command_history_in_the_perl_debugger/lugar-trabajo-programado.jpg
 ---
+
+![]({{page.image}}){: class="imagedropshadow imagecenter" }
+
 I’m always forgetting what pieces I need to make this happen, so I’m writing a note to my future self.
+
+<!--more-->
 
 ### Ubuntu Packages
 
@@ -44,5 +50,11 @@ Add this to ~/.perldb
 ```
 
 <small>(This is a repost of [a post made to blogs.perl.org in 2013][post-2013])</small>
+
+## Attribution
+
+Some images require attribution links as part of their terms:
+
+- <a href="https://www.freepik.com/free-photos-vectors/banner">Banner vector created by roserodionova - www.freepik.com</a>
 
 [post-2013]: http://blogs.perl.org/users/chisel/2013/01/command-history-in-the-perl-debugger.html

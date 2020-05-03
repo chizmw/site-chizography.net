@@ -10,9 +10,11 @@ layout: default
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
       </time>
-      {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+      {% assign author = site.authors | where: 'title', page.author | first %}
+      {% if author %}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><a href="{{ author.url }}">{{ author.title }}</a></span></span>
+      {% endif %}
+      </p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
@@ -32,9 +34,10 @@ layout: default
 </div>
 
 {% if page.tags.size != 0 %}
+{% assign sorted_tags = page.tags | sort %}
 <div class="post-tags">
 <span>
-  {% for tag in page.tags %}
+  {% for tag in sorted_tags %}
     {% capture tag_name %}{{ tag }}{% endcapture %}
     <a href="/tag/{{ tag_name }}"><code class="highlighter-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
   {% endfor %}

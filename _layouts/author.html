@@ -2,13 +2,13 @@
 layout: default
 ---
 
-<div class="home">
+<h1 class="name">{{ page.title }}</h1>
+<div class="bio">{{ page.content }}</div>
 
-  {{ content }}
+{% assign posts = site.posts | where: 'author', page.title %}
 
-  {%- if site.posts.size > 0 -%}
-    <ul class="post-list">
-      {%- for post in site.posts -%}
+<ul class="post-list">
+  {% for post in posts %}
       <li class="clearboth">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
@@ -23,10 +23,5 @@ layout: default
         <!-- Your post's summary goes here -->
         <article>{{ post.excerpt }}</article>
       </li>
-      {%- endfor -%}
-    </ul>
-
-    {%- comment -%}<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>{%- endcomment -%}
-  {%- endif -%}
-
-</div>
+    {%- endfor -%}
+</ul>

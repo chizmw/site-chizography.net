@@ -8,6 +8,13 @@ categories: [Gaming, Introduction, Teaching]
 tags: werewolf werewords teaching script introduction
 ---
 
+![](/assets/images/page/werewords.jpg){: class="imagecenter imagedropshadow"}
+
+Not sure how to explain Werewords to new players? Maybe this will get you and
+your players up to speed.
+
+<!--more-->
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
@@ -27,8 +34,6 @@ tags: werewolf werewords teaching script introduction
   - [Time To Play!](#time-to-play)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-![](/assets/images/page/werewords.jpg){: class="imagecenter imagedropshadow"}
 
 ## The Explanation
 

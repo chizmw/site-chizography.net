@@ -95,8 +95,31 @@ social:
     - https://steamcommunity.com/id/chizcw
     - https://www.youtube.com/c/ChiselWright
 
+# https://stackoverflow.com/questions/16422933/how-do-i-use-markdownify-in-jekyll-to-show-an-excerpt-on-the-index
+excerpt_separator: <!--more-->
+
+collections:
+  authors:
+    title: Authors
+    output: true
+
+# https://www.siteleaf.com/blog/author-pages-in-jekyll-and-siteleaf/
 defaults:
   - scope:
       path: ""
     values:
       image: /assets/images/chisel_greybeard_and_games.jpg
+  - scope:
+      path: ''
+      type: authors
+    values:
+      permalink: "/blog/authors/:title/"
+      layout: author
+      twitter: ''
+  - scope:
+      path: ''
+      type: posts
+    values:
+      permalink: "/blog/:year/:month/:day/:title:output_ext"
+      layout: post
+      author: ''
