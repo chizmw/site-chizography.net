@@ -42,6 +42,29 @@ $link-color:            $off-white;
         box-shadow: 1px 1px 5px #999;
 }
 
+// this stops /blog previews squashing into each other
+// because of the image float
+div.post-content > h2,
+.clearboth {
+    clear: both;
+}
+
+.sectionimage {
+    height: 150px;
+    width: auto;
+    object-fit: contain;
+    float:left;
+    margin-right: 25px;
+}
+
+.sectionimage-right {
+    height: 150px;
+    width: auto;
+    object-fit: contain;
+    float:right;
+    margin-left: 25px;
+}
+
 // https://crunchify.com/how-to-add-smooth-scrolling-back-to-top-button-to-your-wordpress-blog/
 .crunchify-top:hover {
     color: #fff !important;
@@ -79,4 +102,9 @@ article > p:nth-child(1) > img {
     object-fit: contain;
     float:left;
     margin-right: 10px;
+}
+
+.floaty-up-link {
+    float: right;
+    margin-right: 7px;
 }
