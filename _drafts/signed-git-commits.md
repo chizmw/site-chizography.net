@@ -8,6 +8,18 @@ image: /assets/posts/coding.jpg
 ---
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Signing Your Git Commits](#signing-your-git-commits)
+  - [Locating your key](#locating-your-key)
+  - [Configuring `gpg-agent`](#configuring-gpg-agent)
+  - [Configuring Git To Use The Key](#configuring-git-to-use-the-key)
+  - [Commit!](#commit)
+  - [Add your key to github/gitlab](#add-your-key-to-githubgitlab)
+  - [shellrc.d](#shellrcd)
+  - [Attributions](#attributions)
+
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 {% include post-lead-image.md %}
