@@ -2,42 +2,39 @@
 layout: post
 title:  "Signed Git Commits"
 author: Chisel
-categories: [Tech, Git]
-tags: git commits signing shellrcd
+categories: [Tech]
+tags: git gpg shellrcd commits signing shellrcd
 image: /assets/posts/coding.jpg
 ---
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-
-- [Signing Your Git Commits](#signing-your-git-commits)
-  - [Locating your key](#locating-your-key)
-  - [Configuring `gpg-agent`](#configuring-gpg-agent)
-  - [Configuring Git To Use The Key](#configuring-git-to-use-the-key)
-  - [Commit!](#commit)
-  - [Add your key to github/gitlab](#add-your-key-to-githubgitlab)
-  - [shellrc.d](#shellrcd)
-  - [Attributions](#attributions)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 {% include post-lead-image.md %}
 
-<!--more-->
-
-{% include link-blog.md %}
-
-# Signing Your Git Commits
-
-![image](/assets/posts/signed-commits.png){: class="imagedropshadow sectionimage" }
-
-_Why would you want to sign git commits?_
 When you sign a Git commit you can prove that it was definitely you that made
 the commit (assuming you look after your keys and passwords sensibly!) and that
 the code change is really what you wrote.
 
 Also, don't you just like the warm glow of the "Verified" label next to your commits?
+
+<!--more-->
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Configuring Signed Commits](#configuring-signed-commits)
+  - [Locating your key](#locating-your-key)
+  - [Configuring `gpg-agent`](#configuring-gpg-agent)
+  - [Configuring Git To Use The Key](#configuring-git-to-use-the-key)
+  - [Commit!](#commit)
+  - [Add your key to github/gitlab](#add-your-key-to-githubgitlab)
+- [shellrc.d](#shellrcd)
+- [Attributions](#attributions)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+{% include link-blog.md %}
+
+# Configuring Signed Commits
 
 ## Locating your key
 
@@ -122,8 +119,8 @@ fi
 ```
 
 You can add this directly to your `~/.gitconfig` file, but we prefer to have as
-much behaviour as possible in re-runnable snippets. (see "shellrc.d" below for
-details)
+much behaviour as possible in re-runnable snippets. (see
+"[shellrc.d](#shellrcd)" below for details)
 
 ## Commit!
 
@@ -139,12 +136,14 @@ interactive rebase on your working branch.
 
 ## Add your key to github/gitlab
 
+![image](/assets/posts/signed-commits.png){: class="imagedropshadow sectionimage-right" }
+
 One step that's easy to forget after you've wrangled everything into submission
 locally is to upload your GPG *public* key to your Github/Gitlab account.
 
 Without this you won't get the "Verified" label to show for all your effort.
 
-## shellrc.d
+# shellrc.d
 
 Of course, this is all easy enough to paste into one huge `${SHELL}`-rc file,
 but we recommend that you take a look at a different, and portable, way to
@@ -163,7 +162,7 @@ The `git` configuration is in two parts:
 - [30.git-config](https://github.com/chiselwright/shellrcd-extras-chizcw/blob/extras/chizcw/_agnostic/30.git-config)
 - [git-aliases.example](https://github.com/chiselwright/shellrcd-extras-chizcw/blob/extras/chizcw/_shared/git-aliases.example#L87)
 
-## Attributions
+# Attributions
 
 - <a href="https://www.freepik.com/free-photos-vectors/technology">Technology vector created by rawpixel.com - www.freepik.com</a>
 
