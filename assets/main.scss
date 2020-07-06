@@ -11,6 +11,35 @@ $background-green:      #287233;
 $link-color:            $off-white;
 
 /* SCSS overrides in assets/main.scss */
+.post-title {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 2.5em !important;
+    letter-spacing: -2px !important;
+    border-bottom: 2px solid black !important;
+    text-transform: uppercase !important;
+}
+
+body {
+    font-size: 14px;
+}
+
+code {
+    font-size: 14px;
+}
+
+.date { background: #fe921f; color: #ffffff; display: inline-block; font-family: 'Lato', sans-serif; font-size: 12px; font-weight: bold; line-height: 12px; letter-spacing: 1px; margin: 0 0 30px; padding: 10px 15px 8px; text-transform: uppercase; }
+
+.authorbox { background: #808080; color: #ffffff; display: inline-block; font-family: 'Lato', sans-serif; font-size: 12px; font-weight: bold; line-height: 12px; letter-spacing: 1px; margin: 0 0 30px; padding: 10px 15px 8px; text-transform: uppercase; }
+
+.authorbox > a {
+    color: white;
+}
+
+.post-meta {
+    color: #828282;
+    float: right;
+}
+
 
 .post-tags {
     font-style:         italic;
