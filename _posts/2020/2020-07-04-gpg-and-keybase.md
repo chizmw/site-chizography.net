@@ -16,6 +16,22 @@ on top of. Having Keybase as part of your toolset can save you from yourself.
 <!--more-->
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Managing GPG keys with Keybase](#managing-gpg-keys-with-keybase)
+  - [Prerequisites](#prerequisites)
+    - [Keybase](#keybase)
+    - [GPG](#gpg)
+  - [Importing Existing Key(s)](#importing-existing-keys)
+  - [Starting From Scratch](#starting-from-scratch)
+    - [Create New GPG Key](#create-new-gpg-key)
+    - [Verify Key Exists Locally](#verify-key-exists-locally)
+    - [Push To Keybase](#push-to-keybase)
+- [Troubleshooting](#troubleshooting)
+  - [Failed to restart keybase.service: Unit keybase.service not found.](#failed-to-restart-keybaseservice-unit-keybaseservice-not-found)
+- [Attributions](#attributions)
+
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 {% include link-blog.md %}
