@@ -5,7 +5,7 @@ date:   2020-07-04 02:03:04 +0000
 author: Chisel
 categories: [Tech]
 tags: gpg keybase keybase.io
-image: /assets/posts/abstract-secure-technology-background.jpg
+image: /assets/posts/2020-07-04-gpg-and-keybase/abstract-secure-technology-background.jpg
 ---
 
 {% include post-lead-image.md %}

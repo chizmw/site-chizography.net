@@ -5,7 +5,7 @@ date:   2020-07-05 02:03:04 +0000
 author: Chisel
 categories: [Tech]
 tags: git gpg shellrcd commits signing shellrcd
-image: /assets/posts/coding.jpg
+image: /assets/posts/2020-07-05-signed-git-commits/coding.jpg
 ---
 
 {% include post-lead-image.md %}
@@ -129,7 +129,7 @@ At this point you should see slightly different behaviour locally when you commi
 
 After completing the commit message, you'll be prompted for your GPG password:
 
-![image](/assets/posts/git-signing-prompt.png){: class="imagedropshadow" }
+![image](/assets/posts/2020-07-05-signed-git-commits/git-signing-prompt.png){: class="imagedropshadow" }
 
 Don't panic! `gpg-agent` caches this for a few minutes, so you don't have to
 enter this for _every commit_! This is a blessing when youre performing an
@@ -137,7 +137,7 @@ interactive rebase on your working branch.
 
 ## Add your key to github/gitlab
 
-![image](/assets/posts/signed-commits.png){: class="imagedropshadow sectionimage-right" }
+![image](/assets/posts/2020-07-05-signed-git-commits/signed-commits.png){: class="imagedropshadow sectionimage-right" }
 
 One step that's easy to forget after you've wrangled everything into submission
 locally is to upload your GPG *public* key to your Github/Gitlab account.
