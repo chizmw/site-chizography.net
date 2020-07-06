@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Signed Git Commits"
+date:   2020-07-05 02:03:04 +0000
 author: Chisel
 categories: [Tech]
 tags: git gpg shellrcd commits signing shellrcd
