@@ -14,10 +14,15 @@ USER jsite
 RUN     bin/update-tags
 RUN     tree ${JEKYLL_SRC}
 
+# tag "debugging"
+RUN ls -lah /tmp/jekyll/dest/tag
+
 #-----
 FROM    kyma/docker-nginx
 
 COPY --from=jekyll-composed /tmp/jekyll/dest/ /var/www
 RUN     ls -lah /var/www
+# tag "debugging"
+RUN     ls -lah /var/www/tag
 
 CMD     'nginx'
