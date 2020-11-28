@@ -11,4 +11,14 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
   ga('create', '{{ site.google_analytics }}', 'auto');
   ga('send', 'pageview');
 }
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EGPH7W5GVE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EGPH7W5GVE');
+</script>
 {%- endif -%}
