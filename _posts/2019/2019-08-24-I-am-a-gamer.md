@@ -33,5 +33,5 @@ Some images require attribution links as part of their terms:
 
 - <a href="https://www.freepik.com/free-photos-vectors/kids">Kids vector created by macrovector - www.freepik.com</a>
 
-[chisel-games]: http://chisel.pm/base-games
+[chisel-games]: https://geekgroup.app/users/chizcw/collection
 [games-photos]: https://goo.gl/photos/H1j52usS8Hiwt8fN9
