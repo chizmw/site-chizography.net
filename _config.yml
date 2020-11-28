@@ -21,7 +21,7 @@ timezone: Europe/London
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 # title: chizography
-email: chisel@chizography.net
+email: chisel@malik-wright.uk
 # the subpath of your site, e.g. /blog
 baseurl: ""
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -68,10 +68,10 @@ google_analytics: UA-25425412-1
 # - https://brianm.me/posts/how-to-make-jekyll-site-blog
 
 # seo
-title: chizography
+title: chisel's place
 description: >- # this means to ignore newlines until "baseurl:"
     Chisel's personal website: a little bit of everything.
-url: https://chizography.net
+url: https://chisel.malik-wright.uk
 
 twitter:
   username: chizcw
