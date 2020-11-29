@@ -1,4 +1,4 @@
-FROM jekyll-base:composed as jekyll-composed
+FROM chizcw/jekyll-site-base:54e93166 as jekyll-composed
 
 # inherit lots of ONBUILD magic
 # if we haven't changed anything upstream our generated site will be output to
