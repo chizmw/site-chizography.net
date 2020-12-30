@@ -32,11 +32,11 @@ github_username: chiselwright
 permalink: /blog/:year/:month/:day/:title:output_ext
 
 socialmedia:
-  facebook: chiselwright
+  facebook: chiselmalikwright
   github: chiselwright
-  instagram: chizcw
+  instagram: chizmw
   linkedin: chiselmalikwright
-  twitter: chizcw
+  twitter: chizmw
 
 # Build settings
 markdown: kramdown
@@ -82,18 +82,6 @@ facebook:
   admins:
 
 logo: /assets/images/chisel_greybeard_and_games.jpg
-
-social:
-  name: Chisel Wright
-  links:
-    - https://github.com/chiselwright
-    - https://facebook.com/chiselwright
-    - https://twitter.com/chizcw
-    - https://www.instagram.com/chizcw
-    - https://www.last.fm/user/chiselwright
-    - https://www.linkedin.com/in/chiselwright
-    - https://steamcommunity.com/id/chizcw
-    - https://www.youtube.com/c/ChiselWright
 
 # https://stackoverflow.com/questions/16422933/how-do-i-use-markdownify-in-jekyll-to-show-an-excerpt-on-the-index
 excerpt_separator: <!--more-->
