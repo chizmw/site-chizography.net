@@ -5,20 +5,8 @@
 layout: home
 ---
 
-### Hello World!
-
-{% highlight shell %}
-perl -E 'say "Hello, World!"'
-{% endhighlight %}
-
-{% highlight shell %}
-echo 'Hello, World!'
-{% endhighlight %}
-
-{% highlight shell %}
-python -c 'print("Hello, World!")'
-{% endhighlight %}
-
-{% highlight shell %}
-node -e 'console.log("Hello World!")'
-{% endhighlight %}
+<div class="blog-index">
+  {% assign post = site.posts.first %}
+  {% assign content = post.content %}
+  {% include post_detail.html %}
+</div>
