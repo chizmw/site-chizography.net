@@ -1,6 +1,7 @@
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; script-src-elem 'self' code.jquery.com kit.fontawesome.com maps.googleapis.com cdn.rawgit.com www.google-analytics.com www.googletagmanager.com; script-src-attr; style-src 'self' pro.fontawesome.com; style-src-elem 'self' pro.fontawesome.com kit-pro.fontawesome.com; style-src-attr; img-src 'self' www.google-analytics.com; font-src pro.fontawesome.com kit-pro.fontawesome.com; connect-src www.google-analytics.com www.googletagmanager.com; media-src; object-src 'self'; prefetch-src; child-src; frame-src; worker-src; form-action 'self'; base-uri 'self'; manifest-src 'self'; plugin-types no/plugins; report-to">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'; script-src-elem 'self' code.jquery.com kit.fontawesome.com maps.googleapis.com cdn.rawgit.com www.google-analytics.com www.googletagmanager.com; script-src-attr; style-src 'self' pro.fontawesome.com; style-src-elem 'self' pro.fontawesome.com kit-pro.fontawesome.com fonts.googleapis.com; style-src-attr; img-src 'self' www.google-analytics.com; font-src pro.fontawesome.com kit-pro.fontawesome.com cdn.jsdelivr.net fonts.gstatic.com; connect-src www.google-analytics.com www.googletagmanager.com; media-src; object-src 'self'; prefetch-src; child-src; frame-src; worker-src; form-action 'self'; base-uri 'self'; manifest-src 'self'; plugin-types no/plugins; report-to">
   <meta name="referrer" content="no-referrer">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,6 +9,8 @@
   {%- seo -%}
 
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
   {% feed_meta %}
 
   {% if jekyll.environment == 'production' and site.google_analytics -%}
