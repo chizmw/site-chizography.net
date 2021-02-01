@@ -8,16 +8,17 @@
   {%- include favicon.html -%}
   {%- seo -%}
 
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   {% feed_meta %}
 
   {% if jekyll.environment == 'production' and site.google_analytics -%}
-  <script src="{{ "/assets/js/google-analytics.js" | relative_url }}"></script>
+  <script src="{{ '/assets/js/google-analytics.js' | relative_url }}"></script>
   {%- endif %}
 
   {%- if site.tags != "" -%}
-    {%- include collect-tags.html -%}
+  {%- include collect-tags.html -%}
   {%- endif -%}
 </head>
