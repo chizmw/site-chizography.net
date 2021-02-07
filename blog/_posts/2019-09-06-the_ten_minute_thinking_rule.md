@@ -4,6 +4,8 @@ title:  "The Ten Minute Thinking Rule"
 date:   2019-09-06 02:03:04 +0100
 author: Chisel
 categories: [blog]
+description: >
+  A mini-rant about something I like to call _The Ten Minute Thinking Rule_
 tags: [etiquette, perl, repost, opinion]
 image:
   path:    /assets/img/blog/2019-09-06-the_ten_minute_thinking-rule-brain-gear-vector.jpg

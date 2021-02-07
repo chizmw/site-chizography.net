@@ -5,6 +5,9 @@ date:   2019-09-06 03:04:05 +0100
 author: Chisel
 categories: [blog]
 tags: [werewolf, werewords, teaching, script, introduction]
+description: >
+  Not sure how to explain Werewords to new players? Maybe this will get you
+  and your players up to speed.
 image:
   path:    /assets/img/blog/2019-09-06-game_intro_werewords-header.jpg
   srcset:

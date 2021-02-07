@@ -3,6 +3,9 @@ layout: post
 title:  "Plex Database Repair on an NVIDIA SHIELD Pro"
 author: Chisel
 categories: [blog, tech]
+description: >
+  Sometimes you'll find you have a corrupt database on your media server.
+  This article should get you back up and running.
 tags: [plex, nvidia, shield, database, repair, sqlite, howto]
 date:   2020-11-28 02:03:04 +0000
 image:

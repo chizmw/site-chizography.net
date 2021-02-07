@@ -5,6 +5,10 @@ date:   2020-04-10 02:03:04 +0000
 author: Chisel
 categories: [blog, tech]
 tags: [tmux, configuration, howto]
+description: >
+  Being able to reboot a machine and return to the same `tmux` session is
+  extremely useful. This article talks you through setting up a basic, yet
+  extendable, configuration to achieve this.
 image:
   path:    /assets/img/blog/2020-04-10-tmux-restore-session-terminal-screengrab.png
   srcset:

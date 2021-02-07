@@ -3,6 +3,9 @@ layout: post
 title:  "Google Music Cleanup"
 author: Chisel
 categories: [blog, tech]
+description: >
+    Some days you just need to clean up the mess made by Google Music Manager
+    not recognising pre-existing files.
 tags: [perl, music, google, cleanup]
 date:   2020-07-22 02:03:04 +0000
 image:

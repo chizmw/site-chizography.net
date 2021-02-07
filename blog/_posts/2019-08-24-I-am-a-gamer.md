@@ -5,6 +5,8 @@ date:   2019-08-24 19:46:36 +0100
 author: Chisel
 categories: [blog]
 tags: [hobby, games, gaming]
+description: >
+  An unsurprising revelation about the author!
 image:
   path:    /assets/img/blog/2019-08-24-I-am-a-gamer-board-games-kids-isometric-illustration.jpg
   srcset:

@@ -4,6 +4,9 @@ title:  "GPG with Keybase"
 date:   2020-07-04 02:03:04 +0000
 author: Chisel
 categories: [blog, tech]
+description: >
+      Managing GPG keys is one of those things that's far too easy to forget to keep
+      on top of. Having Keybase as part of your toolset can save you from yourself.
 tags: [gpg, keybase keybase.io, howto]
 image:
   path:    /assets/img/blog/2020-07-04-gpg-and-keybase-abstract-secure-technology-background.jpg

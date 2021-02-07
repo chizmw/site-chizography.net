@@ -4,6 +4,9 @@ title:  "Signed Git Commits"
 date:   2020-07-05 02:03:04 +0000
 author: Chisel
 categories: [blog, tech]
+description: >
+    Proving that you made `git` commits is useful.
+    This article walks you through the steps needed to enable this behaviour.
 tags: [git, gpg, shellrcd, commits, signing, howto]
 image:
   path:    /assets/img/blog/2020-07-05-signed-git-commits-coding.jpg

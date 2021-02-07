@@ -5,6 +5,8 @@ date:   2019-08-19 19:46:36 +0100
 author: Chisel
 categories: [blog]
 tags: [nginx, zucchini, jekyll, news, docker]
+description: >
+  The _"Hello, World!"_ of blog posts.
 image:
   path:    /assets/img/blog/2019-08-19-welcome-to-chizography-hey-neon-sign.jpg
   srcset:

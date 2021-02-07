@@ -5,6 +5,10 @@ date:   2019-09-06 02:03:04 +0100
 author: Chisel
 categories: [blog, tech]
 tags: [perl, debugger, repost]
+description: >
+    If you're one of the rare people that prefers the `perl` debugger over
+    `warn()` statements everywhere in your code you will benefit from a
+    functioning command history in the debugger.
 image:
   path:    /assets/img/blog/2019-09-06-command_history_in_the_perl_debugger-lugar-trabajo-programado.jpg
   srcset:
