@@ -44,3 +44,7 @@ arriving addressed to someone I no longer associated myself with. So I found
 a suitable website, and changed my name by deed poll.
 
 And thus, Chisel was official.
+
+<div class="tweet-container">
+<blockquote class="twitter-tweet" data-lang="en" data-theme="dark"><p lang="en" dir="ltr">Being weird I abbreviate Chisel to Chiz, never Chis.<br><br>It looks odd, and in my head rhymes with &quot;melted yellow snow&quot;.</p>&mdash; Chisel (@chizmw) <a href="https://twitter.com/chizmw/status/938327913870647301?ref_src=twsrc%5Etfw">December 6, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
