@@ -1,3 +1,6 @@
+---
+# yamllint disable rule:line-length
+
 # Config
 # ========================================================================================
 
@@ -54,6 +57,8 @@ menu:
     url: /about/
   - title: Résumé
     url: /resume/
+  - title: Send Money
+    url: /send-money/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
