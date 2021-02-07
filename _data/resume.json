@@ -250,7 +250,7 @@
   "skills": [
     {
       "name": "SaaS",
-      "level": "",
+      "level": "Professional",
       "keywords": [
         "OpsGenie",
         "blameless.com",
@@ -259,7 +259,7 @@
     },
     {
       "name": "Languages",
-      "level": "",
+      "level": "Professional",
       "keywords": [
         "Perl",
         "Shell (bash/zsh)",
@@ -271,7 +271,7 @@
     },
     {
       "name": "Databases & Storage",
-      "level": "",
+      "level": "Professional",
       "keywords": [
         "PostgreSQL",
         "MySQL",
@@ -281,7 +281,7 @@
     },
     {
       "name": "Tooling",
-      "level": "",
+      "level": "Professional",
       "keywords": [
         "git",
         "docker",
@@ -294,7 +294,7 @@
     },
     {
       "name": "Web Servers",
-      "level": "",
+      "level": "Intermediate",
       "keywords": [
         "Apache 1.x",
         "Apache 2.x",
@@ -303,7 +303,7 @@
     },
     {
       "name": "Amazon Web Services (AWS)",
-      "level": "",
+      "level": "Intermediate",
       "keywords": [
         "EC2",
         "ECS",
@@ -315,7 +315,7 @@
     },
     {
       "name": "Websites",
-      "level": "",
+      "level": "Intermediate",
       "keywords": [
         "HTML",
         "CSS",
@@ -324,7 +324,7 @@
     },
     {
       "name": "Health & Safety",
-      "level": "",
+      "level": "Intermediate",
       "keywords": [
         "Fire Safety",
         "DSE Assessments",
@@ -335,19 +335,30 @@
   "languages": [
     {
       "language": "English",
-      "fluency": "Native"
+      "fluency": "Native speaker"
     },
     {
       "language": "French",
-      "fluency": "GCSE (A)"
+      "fluency": "Elementary proficiency"
     },
     {
       "language": "German",
-      "fluency": "GCSE (B)"
+      "fluency": "Elementary proficiency"
     },
     {
       "language": "Italian",
-      "fluency": "Tourist Survival"
+      "fluency": "Elementary proficiency"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Tabletop Gaming",
+      "keywords": [
+        "Board Games",
+        "Card Games",
+        "Social Deduction",
+        "Design"
+      ]
     }
   ],
   "references": [
