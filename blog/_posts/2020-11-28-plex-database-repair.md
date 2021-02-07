@@ -2,7 +2,7 @@
 layout: post
 title:  "Plex Database Repair on an NVIDIA SHIELD Pro"
 author: Chisel
-categories: [Tech]
+categories: [blog, tech]
 tags: [plex, nvidia, shield, database, repair, sqlite, howto]
 date:   2020-11-28 02:03:04 +0000
 image:

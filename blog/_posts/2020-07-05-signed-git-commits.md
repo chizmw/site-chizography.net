@@ -3,8 +3,8 @@ layout: post
 title:  "Signed Git Commits"
 date:   2020-07-05 02:03:04 +0000
 author: Chisel
-categories: [Tech]
-tags: [git, gpg, shellrcd, commits, signing]
+categories: [blog, tech]
+tags: [git, gpg, shellrcd, commits, signing, howto]
 image:
   path:    /assets/img/blog/2020-07-05-signed-git-commits-coding.jpg
   srcset:

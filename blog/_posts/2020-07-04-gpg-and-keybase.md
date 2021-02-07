@@ -3,8 +3,8 @@ layout: post
 title:  "GPG with Keybase"
 date:   2020-07-04 02:03:04 +0000
 author: Chisel
-categories: [Tech]
-tags: [gpg keybase keybase.io]
+categories: [blog, tech]
+tags: [gpg, keybase keybase.io, howto]
 image:
   path:    /assets/img/blog/2020-07-04-gpg-and-keybase-abstract-secure-technology-background.jpg
   srcset:

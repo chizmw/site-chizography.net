@@ -3,7 +3,7 @@ layout: post
 title:  "I Play Games"
 date:   2019-08-24 19:46:36 +0100
 author: Chisel
-categories: [Hobbies, Gaming]
+categories: [blog]
 tags: [hobby, games, gaming]
 image:
   path:    /assets/img/blog/2019-08-24-I-am-a-gamer-board-games-kids-isometric-illustration.jpg

@@ -3,7 +3,7 @@ layout: post
 title:  "Introducing: Werewords Deluxe"
 date:   2019-09-06 03:04:05 +0100
 author: Chisel
-categories: [Gaming, Introduction, Teaching]
+categories: [blog]
 tags: [werewolf, werewords, teaching, script, introduction]
 image:
   path:    /assets/img/blog/2019-09-06-game_intro_werewords-header.jpg

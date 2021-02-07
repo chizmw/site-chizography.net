@@ -2,7 +2,7 @@
 layout: post
 title:  "Google Music Cleanup"
 author: Chisel
-categories: [Tech]
+categories: [blog, tech]
 tags: [perl, music, google, cleanup]
 date:   2020-07-22 02:03:04 +0000
 image:

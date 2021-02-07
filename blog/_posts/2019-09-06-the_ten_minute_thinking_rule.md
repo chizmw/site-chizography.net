@@ -3,7 +3,7 @@ layout: post
 title:  "The Ten Minute Thinking Rule"
 date:   2019-09-06 02:03:04 +0100
 author: Chisel
-categories: [Etiquette]
+categories: [blog]
 tags: [etiquette, perl, repost, opinion]
 image:
   path:    /assets/img/blog/2019-09-06-the_ten_minute_thinking-rule-brain-gear-vector.jpg

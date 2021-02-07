@@ -3,7 +3,7 @@ layout: post
 title:  "Command history in the perl debugger"
 date:   2019-09-06 02:03:04 +0100
 author: Chisel
-categories: [Tech]
+categories: [blog, tech]
 tags: [perl, debugger, repost]
 image:
   path:    /assets/img/blog/2019-09-06-command_history_in_the_perl_debugger-lugar-trabajo-programado.jpg

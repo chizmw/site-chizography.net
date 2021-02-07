@@ -3,8 +3,8 @@ layout: post
 title:  "Configuring tmux"
 date:   2020-04-10 02:03:04 +0000
 author: Chisel
-categories: [Tech]
-tags: [tmux, tech, configuration]
+categories: [blog, tech]
+tags: [tmux, configuration, howto]
 image:
   path:    /assets/img/blog/2020-04-10-tmux-restore-session-terminal-screengrab.png
   srcset:
