@@ -255,6 +255,9 @@ hydejack:
   # seeing an old date.
   hide_dates: false
 
+  # we don't want the clap
+  clap_button: false
+
   # TODO
   hide_last_modified: false
 
