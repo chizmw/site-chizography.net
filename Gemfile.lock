@@ -1,3 +1,10 @@
+PATH
+  remote: #jekyll-theme-hydejack
+  specs:
+    jekyll-theme-hydejack (9.1.0)
+      jekyll (>= 3.8, < 5.0)
+      jekyll-include-cache (~> 0.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -59,9 +66,6 @@ GEM
     jekyll-target-blank (2.0.0)
       jekyll (>= 3.0, < 5.0)
       nokogiri (~> 1.10)
-    jekyll-theme-hydejack (9.1.0)
-      jekyll (>= 3.8, < 5.0)
-      jekyll-include-cache (~> 0.2)
     jekyll-titles-from-headings (0.5.3)
       jekyll (>= 3.3, < 5.0)
     jekyll-watch (2.2.1)
@@ -119,7 +123,7 @@ DEPENDENCIES
   jekyll-seo-tag
   jekyll-sitemap
   jekyll-target-blank
-  jekyll-theme-hydejack (~> 9.0)
+  jekyll-theme-hydejack!
   jekyll-titles-from-headings
   kramdown-math-katex
 
