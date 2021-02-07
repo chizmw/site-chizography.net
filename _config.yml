@@ -309,6 +309,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - "*.sw?"
+  - ".gitignore"
+  - "Dockerfile"
 include:
   - .well-known
   - LICENSE.md
