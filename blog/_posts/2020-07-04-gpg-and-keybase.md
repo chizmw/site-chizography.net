@@ -5,7 +5,12 @@ date:   2020-07-04 02:03:04 +0000
 author: Chisel
 categories: [Tech]
 tags: [gpg keybase keybase.io]
-image: /assets/img/blog/2020-07-04-gpg-and-keybase-abstract-secure-technology-background.jpg
+image:
+  path:    /assets/img/blog/2020-07-04-gpg-and-keybase-abstract-secure-technology-background.jpg
+  srcset:
+    1920w: /assets/img/blog/2020-07-04-gpg-and-keybase-abstract-secure-technology-background.jpg
+    960w:  /assets/img/blog/2020-07-04-gpg-and-keybase-abstract-secure-technology-background@0,5x.jpg
+    480w:  /assets/img/blog/2020-07-04-gpg-and-keybase-abstract-secure-technology-background@0,25x.jpg
 ---
 
 Managing GPG keys is one of those things that's far too easy to forget to keep
