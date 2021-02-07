@@ -45,9 +45,12 @@ brew install sqlite
 You **must** have configured your Plex Media Server to use an external USB
 drive as the location for the library data.
 
-If you haven't already done this, there a [instructions
+If you haven't already done this, there are [instructions
 online][plex-library-on-usb] and I've had no problems with a [SanDisk Ultra
 Fit 128 GB][amazon-sandisk-usb]
+
+After a 48-hour period in early 2021 where I would return to the media server and discover that ther USB was flagged as corrupt I replaced the USB stick mentioned above with a standard [SanDisk Ultra 128 GB][amazon-usb-sandisk-ultra]
+{:.note title="Update"}
 
 ## Shutdown Cleanly
 
@@ -244,10 +247,11 @@ process.
 
 - <span>Photo by <a href="https://unsplash.com/@benjaminlehman?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">benjamin lehman</a> on <a href="https://unsplash.com/s/photos/database?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
-[amazon-sandisk-usb]:   https://smile.amazon.co.uk/gp/product/B07855LJ99/
-[bsg-imdb]:             https://www.imdb.com/title/tt0407362/
-[bsg-razor]:            https://www.imdb.com/title/tt0991178/
-[bsg-viewing-order]:    https://thunderpeel2001.blogspot.com/2010/02/battlestar-galactica-viewing-order.html
-[mac-homebrew]:         https://brew.sh/
-[plex-library-on-usb]:  https://support.plex.tv/articles/moving-server-data-storage-location-on-nvidia-shield/
-[plex-support-corrupt]: https://support.plex.tv/articles/201100678-repair-a-corrupt-database/
+[amazon-sandisk-usb]:       https://smile.amazon.co.uk/gp/product/B07855LJ99/
+[amazon-usb-sandisk-ultra]: https://smile.amazon.co.uk/gp/product/B00P8XQPY4/
+[bsg-imdb]:                 https://www.imdb.com/title/tt0407362/
+[bsg-razor]:                https://www.imdb.com/title/tt0991178/
+[bsg-viewing-order]:        https://thunderpeel2001.blogspot.com/2010/02/battlestar-galactica-viewing-order.html
+[mac-homebrew]:             https://brew.sh/
+[plex-library-on-usb]:      https://support.plex.tv/articles/moving-server-data-storage-location-on-nvidia-shield/
+[plex-support-corrupt]:     https://support.plex.tv/articles/201100678-repair-a-corrupt-database/
