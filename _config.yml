@@ -262,6 +262,13 @@ hydejack:
 
   # Note that dark mode only works in the PRO version of Hydejack.
   dark_mode:
+    dynamic: true
+    sunrise: 6
+    sunset: 18
+    icon: true
+    always: false
+
+  xdark_mode:
     # Set to `true` to always use the dark theme.
     always: false
 
