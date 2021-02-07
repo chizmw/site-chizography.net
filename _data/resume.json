@@ -1,0 +1,371 @@
+{
+  "meta": {
+    "theme": "kendall"
+  },
+  "basics": {
+    "name": "Chisel Malik-Wright",
+    "summary": "Developer evolved into devops, further evolved into SRE.<br/>Particularly interested in problem solving code, process and architectural challenges. Preferably with access to good, modern solutions.<br/><br/>Availability: Two calendar months.",
+    "picture": "/assets/img/people/chisel@256x256.jpg",
+    "email": "career@chisel.dev",
+    "phone": "+44 7966 44 67 68",
+    "website": "https://chisel.malik-wright.uk",
+    "label": "Software, Infrastructure & Operations",
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "chizmw",
+        "url": "http://twitter.com/chizmw"
+      },
+      {
+        "network": "Instagram",
+        "username": "chizmw",
+        "url": "https://www.instagram.com/chizmw/"
+      }
+    ],
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Northolt",
+      "countryCode": "GB",
+      "region": "London"
+    }
+  },
+  "work": [
+    {
+      "company": "Zoopla",
+      "position": "Site Reliability Engineer",
+      "website": "",
+      "startDate": "2020-05-01",
+      "summary": "",
+      "highlights": [
+        "Incident Management: assist with process implementation; trial tool to automate aspects of process to speed up incident response",
+        "On-Call & Alerts: lead trial for on-call scheduling and alerting within business area"
+      ]
+    },
+    {
+      "company": "Zoopla",
+      "position": "Senior Software Engineer (Infrastructure)",
+      "website": "",
+      "startDate": "2019-06-01",
+      "endDate": "2019-06-01",
+      "summary": "",
+      "highlights": [
+        "managing AWS infrastructure with terraform; legacy account imports, and multiaccount migration",
+        "migration of legacy cron scripts into ECS Scheduled tasks",
+        "support bare metal &rarr; docker &rarr; ECS migration for services",
+        "automate and improve 'New Starter' and 'Engineer Leaving' processes",
+        "automate deployment of Jenkins nodes and gitlab runners"
+      ]
+    },
+    {
+      "company": "Zoopla",
+      "position": "Software Developer",
+      "website": "",
+      "startDate": "2016-08-01",
+      "summary": "",
+      "highlights": [
+        "adopt maintenance and improvements around the Jenkins instances",
+        "deploy and maintain internal CPAN repositories (Pinto)",
+        "refine, refactor, improve and maintain Jenkins groovy library for build pipelines",
+        "work on internal tools for improving developer workflow wrt. development, testing and deployment"
+      ],
+      "endDate": "2019-06-01"
+    },
+    {
+      "company": "YOOX NET-A-PORTER GROUP",
+      "position": "Senior Developer",
+      "website": "",
+      "startDate": "2015-02-01",
+      "summary": "",
+      "highlights": [
+        "extend continuous deployment pipeline to enable Docker based deployments",
+        "introduce neo4j as storage for real-time customer association",
+        "own the tooling, examples and developer documentation around the evolving RESTful, JSON-based commerce services",
+        "design and build connectors, agents, and micro-services for the new stylish commerce architecture",
+        "contribute to the design of the platform's resources, APIs and payloads",
+        "identify and develop Linux-based tools to support the agile team's development, deployment and operational needs",
+        "be an evangelist for the stylish commerce platform, both inside and outside of NAP"
+      ],
+      "endDate": "2016-08-01"
+    },
+    {
+      "company": "THE NET-A-PORTER GROUP",
+      "position": "Senior Developer",
+      "website": "",
+      "startDate": "2014-12-01",
+      "summary": "",
+      "highlights": [],
+      "endDate": "2015-02-01"
+    },
+    {
+      "company": "YOOX NET-A-PORTER GROUP",
+      "position": "BLESS Committee (Chairperson)",
+      "website": "",
+      "startDate": "2014-08-01",
+      "summary": "",
+      "highlights": [
+        "lead the restructuring of the committee to make better use of interests and enthusiasm",
+        "drive better branding of the committee through better use of email and consistent style",
+        "smarter use of technologies for gathering information; e.g. Typeform",
+        "increase sharing and visibility through the deployment of a BLESS portal; Joomla.driven CMS"
+      ],
+      "endDate": "2016-08-01"
+    },
+    {
+      "company": "NET-A-PORTER.COM",
+      "position": "Perl Architect",
+      "website": "",
+      "startDate": "2011-03-01",
+      "summary": "",
+      "highlights": [
+        "migrate warehouse application from apache1/mod_perl1 to Plack/PSGI.",
+        "update perl build process to use 5.16.x and 5.18.x.",
+        "update perl build process to install on Centos-6/RHEL6 (previously Centos 5/RHEL5).",
+        "update product management application to run on Centos-6/RHEL6 (previously Centos 5/RHEL5).",
+        "implement network resiliency in bespoke message/job broker system."
+      ],
+      "endDate": "2014-11-01"
+    },
+    {
+      "company": "NET-A-PORTER.COM",
+      "position": "Senior Perl Developer",
+      "website": "",
+      "startDate": "2010-11-01",
+      "summary": "",
+      "highlights": [],
+      "endDate": "2011-03-01"
+    },
+    {
+      "company": "NET-A-PORTER.COM",
+      "position": "Site Fire Officer",
+      "website": "",
+      "startDate": "2009-08-01",
+      "summary": "",
+      "highlights": [
+        "lead the team of Fire Marshals",
+        "provide a single point of contact for questions and issues relating to fire safety issues at the company's head office.",
+        "also responsible for:<ul/><li>planning evacuation procedure</li><li>recruiting fire marshals</li><li>organising and running bi-annual evacuation drills</li></ul>"
+      ],
+      "endDate": "2013-07-01"
+    },
+    {
+      "company": "NET-A-PORTER.COM",
+      "position": "Perl Developer",
+      "website": "",
+      "startDate": "2006-11-01",
+      "summary": "",
+      "highlights": [
+        "improve in-house product/stock management system.",
+        "introduce new technologies and ideas: Apache::Session, DBIx:Class, Catalyst.",
+        "implement photography studio workflow functionality.",
+        "implement customer promotion management system.",
+        "design and create new in-house product management system and architecture with existing systems to facilitate the launch of TheOutnet.com."
+      ],
+      "endDate": "2010-11-01"
+    },
+    {
+      "company": "CPAN",
+      "position": "Contributor",
+      "website": "",
+      "startDate": "2004-04-01",
+      "summary": "",
+      "highlights": [
+        "<a href='https://metacpan.org/author/CHISEL?sort=[[3,1]]'>https://metacpan.org/author/CHISEL</a>"
+      ]
+    },
+    {
+      "company": "EHS Brann",
+      "position": "Lead Software Developer",
+      "website": "",
+      "startDate": "2002-01-01",
+      "summary": "",
+      "highlights": [
+        "project design, implementation and maintenance for data-capture (microsites), data-processing and email/sms broadcasts.",
+        "maintain existing projects.",
+        "improve documentation and general working practices."
+      ],
+      "endDate": "2006-11-01"
+    },
+    {
+      "company": "Moneyextra/Chase De Vere",
+      "position": "Software Developer",
+      "website": "",
+      "startDate": "2000-01-01",
+      "summary": "",
+      "highlights": [
+        "maintain and improve bulletin board for financial website.",
+        "maintain various existing projects/processes.",
+        "interview prospective new employees."
+      ],
+      "endDate": "2001-12-01"
+    },
+    {
+      "company": "Geodetic",
+      "position": "Programmer",
+      "website": "",
+      "startDate": "1997-01-01",
+      "summary": "",
+      "highlights": [],
+      "endDate": "1998-01-01"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Manchester University",
+      "area": "Computer Science & Mathematics",
+      "studyType": "B.Sc. (Hons.)",
+      "startDate": "1993-10-01",
+      "gpa": "",
+      "courses": [],
+      "endDate": "1996-06-01"
+    },
+    {
+      "institution": "Arnold Hill",
+      "area": "",
+      "studyType": "Secondary School + A-Levels",
+      "startDate": "1988-04-01",
+      "endDate": "1993-06-30",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "Lampton",
+      "area": "",
+      "studyType": "Secondary School",
+      "startDate": "1986-01-01",
+      "gpa": "",
+      "courses": [],
+      "endDate": "1988-03-20"
+    },
+    {
+      "institution": "Lionel Road Primary School",
+      "area": "",
+      "studyType": "Primary School",
+      "gpa": "",
+      "startDate": "1978-09-01",
+      "endDate": "1988-07-01",
+      "courses": []
+    }
+  ],
+  "skills": [
+    {
+      "name": "SaaS",
+      "level": "",
+      "keywords": [
+        "OpsGenie",
+        "blameless.com",
+        "Gitlab (self-hosted)"
+      ]
+    },
+    {
+      "name": "Languages",
+      "level": "",
+      "keywords": [
+        "Perl",
+        "Shell (bash/zsh)",
+        "C",
+        "Groovy",
+        "JavaScript",
+        "golang"
+      ]
+    },
+    {
+      "name": "Databases & Storage",
+      "level": "",
+      "keywords": [
+        "PostgreSQL",
+        "MySQL",
+        "neo4j",
+        "Solr"
+      ]
+    },
+    {
+      "name": "Tooling",
+      "level": "",
+      "keywords": [
+        "git",
+        "docker",
+        "puppet",
+        "terrafrom",
+        "jenkins",
+        "gitlab",
+        "subversion"
+      ]
+    },
+    {
+      "name": "Web Servers",
+      "level": "",
+      "keywords": [
+        "Apache 1.x",
+        "Apache 2.x",
+        "nginx"
+      ]
+    },
+    {
+      "name": "Amazon Web Services (AWS)",
+      "level": "",
+      "keywords": [
+        "EC2",
+        "ECS",
+        "IAM",
+        "RDS",
+        "S3",
+        "SSM"
+      ]
+    },
+    {
+      "name": "Websites",
+      "level": "",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "jekyll"
+      ]
+    },
+    {
+      "name": "Health & Safety",
+      "level": "",
+      "keywords": [
+        "Fire Safety",
+        "DSE Assessments",
+        "Risk Assessments"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native"
+    },
+    {
+      "language": "French",
+      "fluency": "GCSE (A)"
+    },
+    {
+      "language": "German",
+      "fluency": "GCSE (B)"
+    },
+    {
+      "language": "Italian",
+      "fluency": "Tourist Survival"
+    }
+  ],
+  "references": [
+    {
+      "name": "LiLi Kathleen Bright - Spotify",
+      "reference": "At the risk of sounding obsequious... I can't say enough good things about Chisel. He's not afraid to challenge people who want to take shortcuts; his commitment to doing things the right way is unmatched. Chisel is conscientious, precise, efficient, witty & thorough. He's really helpful and brilliant at communicating with everyone from the tech savvy to the computer illiterate. Legend."
+    },
+    {
+      "name": "Alex Sayle - Beacon Platform Inc",
+      "reference": "Great quality Perl work, good team player,  good communication skills, and generally a nice person to work with."
+    },
+    {
+      "name": "Shirley Wong - Valtech DE",
+      "reference": "Chisel has excellent attention to detail and has ensured that his coded solutions are future-proof and robust.  However, he is more than an average developer, he has frequently demonstrated his knack for ensuring that his solutions are usable and tailored to meet user needs."
+    },
+    {
+      "name": "Jason Tang - Net-A-Porter.com",
+      "reference": "Second time I've worked with Chisel at a company. His forward thinking to eliminate potential flaws in solutions he has to deliver is invaluable. He is clearly a passionate technical professional and takes great pride in the work and nothing less than 'best of my ability' is acceptable. I thoroughly enjoy working with Chisel as we're both happy to discuss solutions without involving egos and enabling us to provide stronger solutions to problems. Highly recommended.    Jason"
+    }
+  ]
+}
