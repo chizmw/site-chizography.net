@@ -145,8 +145,9 @@ protomolecule% sh -c "$(curl -fsSL https://raw.githubusercontent.com/chiselwrigh
 [zsh] Creating /home/shellbot/.zshrc and adding shellrcd block...
 [bash] Looking for an existing bash config...
 [bash] Non-MacOS detected. Using .bashrc.
-[bash] Adding shellrcd block to /home/shellbot/.bashrc...
+[bash] Creating /home/shellbot/.bashrc and adding shellrcd block...
 [shellrcd] Found /home/shellbot/bin; installing shellrcd-update
+[shellrcd] /home/shellbot/bin/shellrcd-update already exists, leaving untouched
            _             _    _                    _
           ( )           (_ ) (_ )                 ( )
       ___ | |__     __   | |  | |  _ __   ___    _| |
@@ -155,21 +156,14 @@ protomolecule% sh -c "$(curl -fsSL https://raw.githubusercontent.com/chiselwrigh
     (____/(_) (_)`\____)(___)(___)(_)  `\____)`\__,_)
                                 ....is now installed!
 
-    Please look over /home/shellbot/.bashrc for any glaring errors.
+    Please look over /home/shellbot/.zshrc for any glaring errors.
 
     Check which scripts are active with:
         sh /home/shellbot/.shellrc.d/tools/list-active.sh
 
     Once happy, open a new shell or:
-        source /home/shellbot/.bashrc
-protomolecule%
+        source /home/shellbot/.zshrc
 ~~~
-
-I'm not 100% certain why it's talking about `/home/shellbot/.bashrc` in a
-`zsh` session. I might have to go gug-hunting. It's only cosmetic, but
-shouldn't really be doing that.
-{:.note}
-
 
 If you examine either `.bashrc` or `.zshrc` you'll see the manual block that
 I mentioned at the start of this article:
@@ -218,8 +212,7 @@ protomolecule% sh -c "$(curl -fsSL https://raw.githubusercontent.com/chiselwrigh
 [bash] Non-MacOS detected. Using .bashrc.
 [bash] shellrcd block already added to /home/shellbot/.bashrc. Nothing to do.
 [shellrcd] Found /home/shellbot/bin; installing shellrcd-update
-[shellrcd] /home/shellbot/bin/shellrcd-update already exists but is not a symbolic link
-[shellrcd] … consider removing it and running this script again
+[shellrcd] /home/shellbot/bin/shellrcd-update already exists, leaving untouched
            _             _    _                    _
           ( )           (_ ) (_ )                 ( )
       ___ | |__     __   | |  | |  _ __   ___    _| |
@@ -228,13 +221,13 @@ protomolecule% sh -c "$(curl -fsSL https://raw.githubusercontent.com/chiselwrigh
     (____/(_) (_)`\____)(___)(___)(_)  `\____)`\__,_)
                                 ....is now installed!
 
-    Please look over /home/shellbot/.bashrc for any glaring errors.
+    Please look over /home/shellbot/.zshrc for any glaring errors.
 
     Check which scripts are active with:
         sh /home/shellbot/.shellrc.d/tools/list-active.sh
 
     Once happy, open a new shell or:
-        source /home/shellbot/.bashrc
+        source /home/shellbot/.zshrc
 ~~~
 
 `shellrcd-update` is installed as a softlink, so clearly another bug to raise
@@ -415,7 +408,7 @@ precmd() { if [ -n "$TMUX" ] ; then tmux rename-window "$(basename $PWD)"; fi; }
 EOF
 
 # make it executable
-chmod 0755 ~/.shellrc.d/zsh/50.precmd.tmux 
+chmod 0755 ~/.shellrc.d/zsh/50.precmd.tmux
 
 # get it into git
 cd ~/.shellrc.d/
@@ -430,6 +423,101 @@ git push
 Clearly no one want to repeat all of those individual steps after the initial
 time preparing the repos.
 
+You can set a couple of variables in your shell and the installer with Do The Right Thing™
+
+~~~sh
+export SHELLRCD_EXTRA_BRANCH=extras/firstlast
+export SHELLRCD_EXTRA_REPO=git@github.com:chiselwright/shellrcd-extras-shellbot.git
+~~~
+
+you can then run the installation command:
+
+~~~sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/chiselwright/shellrcd/master/tools/install.sh)"
+~~~
+
+We can test this with our demo user by performing some cleanup/removal of our
+work so far, then running the instructions above:
+
+~~~sh
+# file: "remove existing setup"
+rm -rf ~/.shellrc.d/
+~~~
+
+We'll leave `.bashrc` and `.zshrc` alone as we've not customised these
+further than the standard installation process and we've already seen that
+behaves "sensibly".
+
+~~~sh
+# file: "reinstall with information about our extras"
+export SHELLRCD_EXTRA_BRANCH=extras/firstlast
+export SHELLRCD_EXTRA_REPO=git@github.com:chiselwright/shellrcd-extras-shellbot.git
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/chiselwright/shellrcd/master/tools/install.sh)"
+~~~
+
+which produces the following:
+
+~~~text
+[shellrcd] /home/shellbot/.shellrc.d is not found. Downloading...
+[shellrcd] ...done
+[shellrcd] Configuring extras/firstlast from git@github.com:chiselwright/shellrcd-extras-shellbot.git
+Fetching origin
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 8 (delta 4), reused 7 (delta 3), pack-reused 0
+Unpacking objects: 100% (8/8), done.
+From github.com:chiselwright/shellrcd-extras-shellbot
+ * [new branch]      extras/firstlast -> origin/extras/firstlast
+Branch 'extras/firstlast' set up to track remote branch 'extras/firstlast' from 'origin'.
+Switched to a new branch 'extras/firstlast'
+First, rewinding head to replay your work on top of it...
+Applying: Add _agnostic/alias.test
+Applying: Add zsh/50.precmd.tmux
+[zsh] Looking for an existing zsh config...
+[zsh] shellrcd block already added to /home/shellbot/.zshrc. Nothing to do.
+[bash] Looking for an existing bash config...
+[bash] Non-MacOS detected. Using .bashrc.
+[bash] shellrcd block already added to /home/shellbot/.bashrc. Nothing to do.
+[shellrcd] Found /home/shellbot/bin; installing shellrcd-update
+[shellrcd] /home/shellbot/bin/shellrcd-update already exists, leaving untouched
+           _             _    _                    _
+          ( )           (_ ) (_ )                 ( )
+      ___ | |__     __   | |  | |  _ __   ___    _| |
+    /',__)|  _ `\ /'__`\ | |  | | ( '__)/'___) /'_` |
+    \__, \| | | |(  ___/ | |  | | | |  ( (___ ( (_| |
+    (____/(_) (_)`\____)(___)(___)(_)  `\____)`\__,_)
+                                ....is now installed!
+
+    Please look over /home/shellbot/.zshrc for any glaring errors.
+
+    Check which scripts are active with:
+        sh /home/shellbot/.shellrc.d/tools/list-active.sh
+
+    Once happy, open a new shell or:
+        source /home/shellbot/.zshrc
+~~~
+
+We can also examine the project directory and confirm that we do have two
+remotes (base and extras), with our changes being the most resent in the
+commit history:
+
+~~~sh
+protomolecule% cd ~/.shellrc.d
+
+protomolecule% git remote -v
+origin	git@github.com:chiselwright/shellrcd-extras-shellbot.git (fetch)
+origin	git@github.com:chiselwright/shellrcd-extras-shellbot.git (push)
+shellrcd	git://github.com/chiselwright/shellrcd.git (fetch)
+shellrcd	git://github.com/chiselwright/shellrcd.git (push)
+
+protomolecule% git log --oneline -n 5
+663f607 (HEAD -> extras/firstlast) Add zsh/50.precmd.tmux
+22d6213 Add _agnostic/alias.test
+21453e4 (shellrcd/master, shellrcd/HEAD, master) Fix: proper check for "shellrcd-update not a symbolic link"
+4e5dac2 Fix: use path to current shell's RCFILE in welcome message
+8130fea Explicity unset functions ... just in case
+~~~
 
 ### Best Practices
 
