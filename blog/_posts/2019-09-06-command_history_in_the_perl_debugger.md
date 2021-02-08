@@ -17,6 +17,8 @@ image:
     480w:  /assets/img/blog/2019-09-06-command_history_in_the_perl_debugger-lugar-trabajo-programado@0,25x.jpg
 ---
 
+{% include read-estimate.md %}
+
 I’m always forgetting what pieces I need to make this happen, so I’m writing a note to my future self.
 
 <!--more-->

@@ -15,6 +15,7 @@ image:
     480w:  /assets/img/blog/2019-09-06-the_ten_minute_thinking-rule-brain-gear-vector@0,25x.jpg
 ---
 
+{% include read-estimate.md %}
 ## What’s the problem?
 This idea was shared with me during a retrospective session at `$employer` when I was expressing some frustration at people starting to:
 

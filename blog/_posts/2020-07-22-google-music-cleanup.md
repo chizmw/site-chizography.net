@@ -16,6 +16,8 @@ image:
     480w:  /assets/img/blog/2020-07-22-google-music-cleanup-simon-noh-0rmby-3OTeI-unsplash@0,25x.jpg
 ---
 
+{% include read-estimate.md %}
+
 Although [Google Music is on the way out][music-out] it's active for a few more
 months, and if you're like me you might still have [Music
 manager][music-manager] running, and downloading "updates" to your collection.

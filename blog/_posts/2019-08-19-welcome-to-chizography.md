@@ -15,6 +15,8 @@ image:
     480w:  /assets/img/blog/2019-08-19-welcome-to-chizography-hey-neon-sign@0,25x.jpg
 ---
 
+{% include read-estimate.md %}
+
 This post is to mark the start of a new era in my personal website.
 
 <!--more-->

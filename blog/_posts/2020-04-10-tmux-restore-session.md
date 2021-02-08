@@ -17,6 +17,8 @@ image:
     480w:  /assets/img/blog/2020-04-10-tmux-restore-session-terminal-screengrab@0,25x.png
 ---
 
+{% include read-estimate.md %}
+
 Part of my working environment changed recently, causing me to investigate ways
 to preserve a `tmux` session over a reboot.
 

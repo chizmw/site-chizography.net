@@ -16,6 +16,8 @@ image:
     480w:  /assets/img/blog/2020-07-05-signed-git-commits-coding@0,25x.jpg
 ---
 
+{% include read-estimate.md %}
+
 When you sign a Git commit you can prove that it was definitely you that made
 the commit (assuming you look after your keys and passwords sensibly!) and that
 the code change is really what you wrote.

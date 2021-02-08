@@ -18,6 +18,8 @@ image:
     480w:  /assets/img/blog/2021-02-03-git-initial-commit-christopher-gower@0,25x.jpg
 ---
 
+{% include read-estimate.md %}
+
 As a conscientious techie I hate repeating the same manual steps over and over
 again. Equally so, I find I create new `git` repositories quite often. As it
 became clear that I was repeating the same manual steps for each I took some

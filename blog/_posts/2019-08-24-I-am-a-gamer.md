@@ -15,6 +15,8 @@ image:
     480w:  /assets/img/blog/2019-08-24-I-am-a-gamer-board-games-kids-isometric-illustration@0,25x.jpg
 ---
 
+{% include read-estimate.md %}
+
 If you know me at all before discovering this post you won't be even slightly
 surprised to learn what I'm about to say:
 

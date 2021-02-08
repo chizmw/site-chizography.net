@@ -16,6 +16,8 @@ image:
     480w:  /assets/img/blog/2019-09-06-game_intro_werewords-header@0,25x.jpg
 ---
 
+{% include read-estimate.md %}
+
 Not sure how to explain Werewords to new players? Maybe this will get you and
 your players up to speed.
 

@@ -16,6 +16,8 @@ image:
     480w:  /assets/img/blog/2020-07-04-gpg-and-keybase-abstract-secure-technology-background@0,25x.jpg
 ---
 
+{% include read-estimate.md %}
+
 Managing GPG keys is one of those things that's far too easy to forget to keep
 on top of. Having Keybase as part of your toolset can save you from yourself.
 

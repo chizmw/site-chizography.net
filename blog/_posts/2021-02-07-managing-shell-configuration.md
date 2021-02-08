@@ -19,6 +19,8 @@ image:
     480w:  /assets/img/blog/2021-02-07-managing-shell-configuration-underground-bunker@0,25x.jpg
 ---
 
+{% include read-estimate.md %}
+
 Managing a `bash` or `zsh` configuration can be tricky or clunky, especially
 if you work on multiple different machines and want some level of
 consistency.

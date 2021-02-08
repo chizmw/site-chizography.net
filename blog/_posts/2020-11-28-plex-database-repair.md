@@ -16,6 +16,8 @@ image:
     480w:  /assets/img/blog/2020-11-28-plex-database-repair-benjamin-lehman-GNyjCePVRs8-unsplash@0,25x.jpg
 ---
 
+{% include read-estimate.md %}
+
 This article relies heavily on [the plex support
 document][plex-support-corrupt] for repairing a corrupt database. It includes
 some extra steps that I've found useful for performing the process on my
