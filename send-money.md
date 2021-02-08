@@ -14,3 +14,5 @@ listed in order of preference, and continue if desired.
 
 ![Send funds with Paypal](/assets/images/paypal.png){:width="261" height="58"} <br/> [Send funds with Paypal](https://www.paypal.me/chizcw/)
 {: class="payment-box" }
+
+<script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'H2H06CBE');kofiwidget2.draw();</script> 
