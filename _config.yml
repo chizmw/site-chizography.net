@@ -53,6 +53,8 @@ author:
 menu:
   - title: Blog
     url: /blog/
+  - title: Quicklets
+    url: /quicklets/
   - title: About
     url: /about/
   - title: Résumé
