@@ -4,3 +4,15 @@
 <a href="#" class="crunchify-top">↑</a>
 
 <script src="/assets/js/smooth-top-scroll.js"></script>
+
+{% if jekyll.environment == 'production' -%}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-25425412-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-25425412-1');
+</script>
+{% endif %}
