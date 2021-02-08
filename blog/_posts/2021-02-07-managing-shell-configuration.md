@@ -620,12 +620,21 @@ Rebasing by default is a generally good practice to use with any git
 repositories. Read more in
 ["Please, oh please, use git pull --rebase"][article-git-rebase]
 
+## Further Information
+
+You can check out the repos mentioned in this article:
+
+- [shellrcd][github-shellrcd]
+- [shellbot's shellrcd-extras][github-shellrcd-extras-shellbot]
+- [Chisel's _agnostic/ scripts][agnostic-folder-chisel]
+
 ## Attributions
 
 - <a href="https://www.freepik.com/free-photos-vectors/computer">Computer vector created by upklyak - www.freepik.com</a>
 
-
-[agnostic-folder]: https://github.com/chiselwright/shellrcd/tree/master/_agnostic
 [agnostic-folder-chisel]: https://github.com/chiselwright/shellrcd-extras-chizcw/tree/extras/chizcw/_agnostic
+[agnostic-folder]: https://github.com/chiselwright/shellrcd/tree/master/_agnostic
 [article-git-rebase]: https://coderwall.com/p/7aymfa/please-oh-please-use-git-pull-rebase
 [git-force-push-with-lease]: https://stackoverflow.com/a/52823955
+[github-shellrcd]: https://github.com/chiselwright/shellrcd/
+[github-shellrcd-extras-shellbot]: https://github.com/chiselwright/shellrcd-extras-shellbot
