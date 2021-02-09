@@ -1,9 +1,8 @@
 ---
 layout: about
-image: /assets/img/blog/hydejack-9.jpg
+image: /assets/img/sidebar-falling-skies.jpg
 description: >
-  A boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
+  chisel's place is a modest little home for his thoughts and projects
 hide_description: true
 redirect_from:
   - /download/
