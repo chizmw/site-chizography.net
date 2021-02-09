@@ -116,7 +116,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/img/sidebar-bg.jpg
+      image: /assets/img/sidebar-falling-skies.jpg
   # You can use this to provide a default accent color and background for
   # all pages under a given path:
   - scope:
