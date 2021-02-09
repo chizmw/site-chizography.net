@@ -111,6 +111,12 @@ font_heading: Quicksand, Roboto Slab, Helvetica, Arial, sans-serif
 font_code: Fira Code, Menlo, Monaco, Consolas, monospace;
 
 defaults:
+  # general defaults for all the things
+  # https://www.rubydoc.info/gems/jekyll-seo-tag/2.2.3#setting-a-default-image
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/sidebar-bg.jpg
   # You can use this to provide a default accent color and background for
   # all pages under a given path:
   - scope:
