@@ -98,7 +98,7 @@ fi
 
 ## Source
 
-Just in case the script moves on after the artice is published,
+Just in case the script moves on after the article is published,
 [here's the source file][github-homebin-cloneintodir]
 
 
