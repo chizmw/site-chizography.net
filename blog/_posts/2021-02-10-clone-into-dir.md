@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  "Organised Git Checkouts"
+title: "Organised Git Checkouts"
 author: Chisel
-date:   2021-02-10 19:46:36 +0100
+date: 2021-02-10 19:46:36 +0100
 categories: [blog, tech]
 tags: [git]
 description: >
-    It's all too easy to just check out git repositories wherever you are at
-    the time you want it. This becomes unweildy once you have a few repos on
-    the go. This article combines laziness and structure to live a more
-    organised (git repo) lifestyle.
+  It's all too easy to just check out git repositories wherever you are at
+  the time you want it. This becomes unweildy once you have a few repos on
+  the go. This article combines laziness and structure to live a more
+  organised (git repo) lifestyle.
 image:
-  path:    /assets/img/blog/2021-02-10-clone-into-dir.png
+  path: /assets/img/blog/2021-02-10-clone-into-dir.png
   srcset:
     1920w: /assets/img/blog/2021-02-10-clone-into-dir.png
-    960w:  /assets/img/blog/2021-02-10-clone-into-dir@0,5x.png
-    480w:  /assets/img/blog/2021-02-10-clone-into-dir@0,25x.png
+    960w: /assets/img/blog/2021-02-10-clone-into-dir@0,5x.png
+    480w: /assets/img/blog/2021-02-10-clone-into-dir@0,25x.png
 ---
 
 {% include read-estimate.md %}
@@ -27,8 +27,8 @@ repo) lifestyle.
 
 <!--more-->
 
-* this unordered seed list will be replaced by the toc
-{:toc}
+- this unordered seed list will be replaced by the toc
+  {:toc}
 
 ## The Explanation
 
@@ -38,15 +38,15 @@ all clone actions.
 If you prefer to have your code somewhere else you can set a variable in your
 shell:
 
-~~~sh
+```sh
 export CLONEINTO_ROOT=/path/to/your/preference
-~~~
+```
 
 It will create relevant subdirectories, and clone the remote repository for
 you there.
 
-For example, `git@github.com:chiselwright/shellrcd-extras-chizcw.git` will
-ensure into `~/development/chiselwright/` exists then clone the repository
+For example, `git@github.com:chizmw/shellrcd-extras-chizcw.git` will
+ensure into `~/development/chizmw/` exists then clone the repository
 into `shellrcd-extras-chizcw` in that location.
 
 Assuming that succeeds, the script will check to see if you have `code` (the
@@ -57,7 +57,7 @@ automatically.
 
 Save this into your path (e.g. `~/bin`).
 
-~~~bash
+```bash
 # file: "clone-into-dir"
 #!/bin/bash
 set -euo pipefail
@@ -94,12 +94,11 @@ if type code >/dev/null; then
         code "${rootDir}/${BASH_REMATCH[1]}/${BASH_REMATCH[2]}"
     fi
 fi
-~~~
+```
 
 ## Source
 
 Just in case the script moves on after the article is published,
 [here's the source file][github-homebin-cloneintodir]
 
-
-[github-homebin-cloneintodir]: https://github.com/chiselwright/shellrcd-extras-chizcw/blob/extras/chizcw/home-bin/clone-into-dir
+[github-homebin-cloneintodir]: https://github.com/chizmw/shellrcd-extras-chizcw/blob/extras/chizcw/home-bin/clone-into-dir
