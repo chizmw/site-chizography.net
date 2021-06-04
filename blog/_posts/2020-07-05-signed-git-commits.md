@@ -1,19 +1,19 @@
 ---
 layout: post
-title:  "Signed Git Commits"
-date:   2020-07-05 02:03:04 +0000
+title: "Signed Git Commits"
+date: 2020-07-05 02:03:04 +0000
 author: Chisel
 categories: [blog, tech]
 description: >
-    Proving that you made `git` commits is useful.
-    This article walks you through the steps needed to enable this behaviour.
+  Proving that you made `git` commits is useful.
+  This article walks you through the steps needed to enable this behaviour.
 tags: [git, gpg, shellrcd, commits, signing, howto]
 image:
-  path:    /assets/img/blog/2020-07-05-signed-git-commits-coding.jpg
+  path: /assets/img/blog/2020-07-05-signed-git-commits-coding.jpg
   srcset:
     1920w: /assets/img/blog/2020-07-05-signed-git-commits-coding.jpg
-    960w:  /assets/img/blog/2020-07-05-signed-git-commits-coding@0,5x.jpg
-    480w:  /assets/img/blog/2020-07-05-signed-git-commits-coding@0,25x.jpg
+    960w: /assets/img/blog/2020-07-05-signed-git-commits-coding@0,5x.jpg
+    480w: /assets/img/blog/2020-07-05-signed-git-commits-coding@0,25x.jpg
 ---
 
 {% include read-estimate.md %}
@@ -26,8 +26,8 @@ Also, don't you just like the warm glow of the "Verified" label next to your com
 
 <!--more-->
 
-* this unordered seed list will be replaced by the toc
-{:toc}
+- this unordered seed list will be replaced by the toc
+  {:toc}
 
 # Configuring Signed Commits
 
@@ -55,7 +55,7 @@ export GIT_SIGNINGKEY_ID="8788FBC53885BB11"
 
 `gpg-agent` is a necessary part of the process. It's possible to have
 `gpg-agent` take on the role of `ssh-agent` but this didn't behave well when we
-tried it, so it's better to [configure ssh-agent](https://github.com/chiselwright/shellrcd-extras-chizcw/blob/extras/chizcw/_agnostic/39.ssh-agent)
+tried it, so it's better to [configure ssh-agent](https://github.com/chizmw/shellrcd-extras-chizcw/blob/extras/chizcw/_agnostic/39.ssh-agent)
 as you would normally, then configure `gpg-agent` by adding the following to
 your `${SHELL}`-rc file:
 
@@ -94,7 +94,7 @@ fi
 
 ## Configuring Git To Use The Key
 
-Add the following to your `${SHELL}`-rc file, *after* the `export` statement in
+Add the following to your `${SHELL}`-rc file, _after_ the `export` statement in
 the earlier step.
 
 ```sh
@@ -134,7 +134,7 @@ interactive rebase on your working branch.
 ![image](/assets/img/blog/2020-07-05-signed-git-commits-signed-commits.png){: class="imagedropshadow sectionimage-right" }
 
 One step that's easy to forget after you've wrangled everything into submission
-locally is to upload your GPG *public* key to your Github/Gitlab account.
+locally is to upload your GPG _public_ key to your Github/Gitlab account.
 
 Without this you won't get the "Verified" label to show for all your effort.
 
@@ -145,17 +145,17 @@ but we recommend that you take a look at a different, and portable, way to
 manage your shell configuration.
 
 Check out
-[shellrd.c](https://github.com/chiselwright/shellrcd/blob/master/README.md),
+[shellrd.c](https://github.com/chizmw/shellrcd/blob/master/README.md),
 then have a look at the specific files in our extended configuration:
 
-- [10.export-GPG_SIGNING_ID](https://github.com/chiselwright/shellrcd-extras-chizcw/blob/extras/chizcw/_agnostic/10.export-GPG_SIGNING_ID)
-- [39.ssh-agent](https://github.com/chiselwright/shellrcd-extras-chizcw/blob/extras/chizcw/_agnostic/39.ssh-agent)
-- [40.gpg-agent](https://github.com/chiselwright/shellrcd-extras-chizcw/blob/extras/chizcw/_agnostic/40.gpg-agent)
+- [10.export-GPG_SIGNING_ID](https://github.com/chizmw/shellrcd-extras-chizcw/blob/extras/chizcw/_agnostic/10.export-GPG_SIGNING_ID)
+- [39.ssh-agent](https://github.com/chizmw/shellrcd-extras-chizcw/blob/extras/chizcw/_agnostic/39.ssh-agent)
+- [40.gpg-agent](https://github.com/chizmw/shellrcd-extras-chizcw/blob/extras/chizcw/_agnostic/40.gpg-agent)
 
 The `git` configuration is in two parts:
 
-- [30.git-config](https://github.com/chiselwright/shellrcd-extras-chizcw/blob/extras/chizcw/_agnostic/30.git-config)
-- [git-aliases.example](https://github.com/chiselwright/shellrcd-extras-chizcw/blob/extras/chizcw/_shared/git-aliases.example#L87)
+- [30.git-config](https://github.com/chizmw/shellrcd-extras-chizcw/blob/extras/chizcw/_agnostic/30.git-config)
+- [git-aliases.example](https://github.com/chizmw/shellrcd-extras-chizcw/blob/extras/chizcw/_shared/git-aliases.example#L87)
 
 # Attributions
 

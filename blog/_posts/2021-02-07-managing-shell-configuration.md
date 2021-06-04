@@ -1,22 +1,22 @@
 ---
 layout: post
-title:  "Managing Shell Configuration"
+title: "Managing Shell Configuration"
 author: Chisel
-date:   2021-02-07 19:46:36 +0100
+date: 2021-02-07 19:46:36 +0100
 categories: [blog, tech]
 tags: [shell, bash, zsh, config, configuration]
 description: >
-    Managing a `bash` or `zsh` configuration can be tricky or clunky,
-    especially if you work on multiple different machines and want some
-    level of consistency.
+  Managing a `bash` or `zsh` configuration can be tricky or clunky,
+  especially if you work on multiple different machines and want some
+  level of consistency.
 
-    This is one possible solution to the problem.
+  This is one possible solution to the problem.
 image:
-  path:    /assets/img/blog/2021-02-07-managing-shell-configuration-underground-bunker.jpg
+  path: /assets/img/blog/2021-02-07-managing-shell-configuration-underground-bunker.jpg
   srcset:
     1920w: /assets/img/blog/2021-02-07-managing-shell-configuration-underground-bunker.jpg
-    960w:  /assets/img/blog/2021-02-07-managing-shell-configuration-underground-bunker@0,5x.jpg
-    480w:  /assets/img/blog/2021-02-07-managing-shell-configuration-underground-bunker@0,25x.jpg
+    960w: /assets/img/blog/2021-02-07-managing-shell-configuration-underground-bunker@0,5x.jpg
+    480w: /assets/img/blog/2021-02-07-managing-shell-configuration-underground-bunker@0,25x.jpg
 ---
 
 {% include read-estimate.md %}
@@ -29,8 +29,8 @@ This is one possible solution to the problem.
 
 <!--more-->
 
-* this unordered seed list will be replaced by the toc
-{:toc}
+- this unordered seed list will be replaced by the toc
+  {:toc}
 
 ## A Brief History
 
@@ -45,14 +45,14 @@ was loosely based on runlevels and exectable bits being set or not.
 For a number of years I was manually cloining my private repo (because
 **Private Tokens**) and adding the same block to my `.bashrc` file:
 
-~~~sh
+```sh
 cat >> ~/.bashrc <<EOF
 # part of $HOME/.shellrc.d
 if [ -f $HOME/.shellrc.d/source-relevant-files -a -x $HOME/.shellrc.d/source-relevant-files ]; then
     source $HOME/.shellrc.d/source-relevant-files
 fi
 EOF
-~~~
+```
 
 Over time I added `dotfiles/` which I would softlink into appropriate places,
 and later add `home-bin/` to be a placeholder for common scripts I like to
@@ -85,9 +85,9 @@ The idea for the new project was to have a base repo that _anyone_ can use,
 with support for personalised extensions, and some further support for
 private repos (to keep those pesky personall access tokens)
 
-* `shellrcd` - the top level project written and managed by yours truly
-* `shellrcd-extras` - a (public) repo written and managed by yourself
-* `shellrcd-private` - a (private) repo manages by yourself; this gets cloned as a `git submodule`
+- `shellrcd` - the top level project written and managed by yours truly
+- `shellrcd-extras` - a (public) repo written and managed by yourself
+- `shellrcd-private` - a (private) repo manages by yourself; this gets cloned as a `git submodule`
 
 ### Getting Started
 
@@ -97,31 +97,31 @@ repos.
 
 Getting the most basic setup is as simple as:
 
-~~~sh
+```sh
 # for the sensible, paranoid, people out there, the repo readme also has
 # instructions on how to download and inspect the script before running
 # anything
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/chiselwright/shellrcd/master/tools/install.sh)"
-~~~
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/chizmw/shellrcd/master/tools/install.sh)"
+```
 
 #### Creating A Test User
 
 To provide a working example of the process I suggest testing with a demo user:
 
-~~~sh
+```sh
 # run this and follow the prompts
 sudo adduser --shell /bin/zsh shellbot
-~~~
+```
 
 become the new user:
 
-~~~sh
+```sh
 sudo su - shellbot
-~~~
+```
 
 You'll see a message/warning. For now select `q`:
 
-> (q)  Quit and do nothing.  The function will be run again next time.
+> (q) Quit and do nothing. The function will be run again next time.
 
 We're planning on replacing everthing soon enough.
 
@@ -129,9 +129,9 @@ We're planning on replacing everthing soon enough.
 
 Before you do anything make sure you have this, it will save you some extra work later on:
 
-~~~sh
+```sh
 mkdir -p ~/bin
-~~~
+```
 
 We really ought to update the script to create this on your behalf if it doesn't exist.
 {:.note}
@@ -139,8 +139,8 @@ We really ought to update the script to create this on your behalf if it doesn't
 Running the installation command from earlier will perform the appropriate
 magic and output something resembling the following:
 
-~~~text
-protomolecule% sh -c "$(curl -fsSL https://raw.githubusercontent.com/chiselwright/shellrcd/master/tools/install.sh)"
+```text
+protomolecule% sh -c "$(curl -fsSL https://raw.githubusercontent.com/chizmw/shellrcd/master/tools/install.sh)"
 [shellrcd] /home/shellbot/.shellrc.d is not found. Downloading...
 [shellrcd] ...done
 [zsh] Looking for an existing zsh config...
@@ -165,12 +165,12 @@ protomolecule% sh -c "$(curl -fsSL https://raw.githubusercontent.com/chiselwrigh
 
     Once happy, open a new shell or:
         source /home/shellbot/.zshrc
-~~~
+```
 
 If you examine either `.bashrc` or `.zshrc` you'll see the manual block that
 I mentioned at the start of this article:
 
-~~~zsh
+```zsh
 # file: ".zshrc"
 #!/usr/bin/zsh
 
@@ -179,34 +179,34 @@ if [ -f ~/.shellrc.d/source-relevant-files -a -x ~/.shellrc.d/source-relevant-fi
     source ~/.shellrc.d/source-relevant-files
 fi
 ## end of shellrcd block ##
-~~~
+```
 
 Test it's working by logging out, then logging back in:
 
-~~~sh
+```sh
 # stop being shellbot
 exit
 
 # become shellbot again
 sudo su - shellbot
-~~~
+```
 
 You'll see something like this:
 
-~~~zsh
+```zsh
 protomolecule% exit
 ❯ sudo su - shellbot
 gpg-agent[25887]: directory '/home/shellbot/.gnupg' created
 gpg-agent[25887]: directory '/home/shellbot/.gnupg/private-keys-v1.d' created
 gpg-agent[25888]: gpg-agent (GnuPG) 2.2.4 started
 protomolecule%
-~~~
+```
 
 `shellrcd` does its best to leave existing installations untouched, so you
 can safely run the installation command again:
 
-~~~text
-protomolecule% sh -c "$(curl -fsSL https://raw.githubusercontent.com/chiselwright/shellrcd/master/tools/install.sh)"
+```text
+protomolecule% sh -c "$(curl -fsSL https://raw.githubusercontent.com/chizmw/shellrcd/master/tools/install.sh)"
 [shellrcd] /home/shellbot/.shellrc.d already exists. Leaving unchanged.
 [zsh] Looking for an existing zsh config...
 [zsh] shellrcd block already added to /home/shellbot/.zshrc. Nothing to do.
@@ -230,7 +230,7 @@ protomolecule% sh -c "$(curl -fsSL https://raw.githubusercontent.com/chiselwrigh
 
     Once happy, open a new shell or:
         source /home/shellbot/.zshrc
-~~~
+```
 
 `shellrcd-update` is installed as a softlink, so clearly another bug to raise
 for ourselves there.
@@ -241,7 +241,7 @@ for ourselves there.
 The aim of `shellrcd` is to be as minimal as possible, and leave you to grow
 your own suite of startup scripts.
 
-For an example of the format preferred, take a look at the [_agnostic/
+For an example of the format preferred, take a look at the [\_agnostic/
 folder][agnostic-folder] in the base project.
 
 It's good practice to have startup elements in smaller discrete chunks, so
@@ -253,54 +253,53 @@ Create a new repository somewhere. We're using Github for this demo:
 
 ![new github repo](/assets/img/blog/2021-02-07-managing-shell-configuration-new-github-repo.png)
 
-
 #### Update Your Local Project
 
 To keep out of your way `shellrcd` initialises itself with a non-`origin` named remote:
 
-~~~sh
+```sh
 protomolecule% git remote -v
-shellrcd	git://github.com/chiselwright/shellrcd.git (fetch)
-shellrcd	git://github.com/chiselwright/shellrcd.git (push)
-~~~
+shellrcd	git://github.com/chizmw/shellrcd.git (fetch)
+shellrcd	git://github.com/chizmw/shellrcd.git (push)
+```
 
 leaving you free to add _your_ extras repository as `origin`:
 
-~~~sh
+```sh
 # make sure you're in the right place for this to work
 cd ~/.shellrc.d
 
 # you'll need to replace the repo details for your use case
-git remote add origin git@github.com:chiselwright/shellrcd-extras-shellbot.git
+git remote add origin git@github.com:chizmw/shellrcd-extras-shellbot.git
 
 # you might need to generate an ssh keypair for your test user
 #     ssh-keygen
 # and add to your account in Github
 git remote update origin
-~~~
+```
 
 Not much happens, but we're now in a position for the next step:
 
-~~~sh
+```sh
 git checkout -b extras/firstlast shellrcd/master
-~~~
+```
 
 will give you some standard `git` output:
 
-~~~text
+```text
 Branch 'extras/firstlast' set up to track remote branch 'master' from 'shellrcd'.
 Switched to a new branch 'extras/firstlast'
-~~~
+```
 
 You're now ready to test that everything still works .. with no extras, but with the added repository ready to go:
 
-~~~sh
+```sh
 shellrcd-update
-~~~
+```
 
 will output something like this:
 
-~~~text
+```text
 [shellrcd] Switching back to 'master'…
 Switched to branch 'master'
 Your branch is up to date with 'shellrcd/master'.
@@ -327,7 +326,7 @@ Current branch extras/firstlast is up to date.
         extras/firstlast
 
     Updates will activate in a new shell, or if you source your rcfile
-~~~
+```
 
 `shellrcd` hasn't yet been tested with non-`master` default branches. It
 might work through sheer luck, but be careful of you want to use something
@@ -336,9 +335,9 @@ different.
 
 If this works, make sure to push it to the remote:
 
-~~~sh
+```sh
 git push -u origin extras/firstlast
-~~~
+```
 
 At this point you will have a personal repo that contains an exact copy of
 `shellrcd` in the `extras/firstlast` branch.
@@ -350,46 +349,46 @@ that you have your extras repo in place.
 
 This is a simple example of your forst change, and verifying an update.
 
-~~~sh
+```sh
 echo 'alias just-a-test="echo Just A Test"' > ~/.shellrc.d/_agnostic/alias.test
 chmod 0755 ~/.shellrc.d/_agnostic/alias.test
 
 cd ~/.shellrc.d/
 git add _agnostic/alias.test
 git commit -m 'Add _agnostic/alias.test'
-~~~
+```
 
 Note - you only have the change locally. This is OK for now.
 
-~~~sh
+```sh
 protomolecule% git log --oneline -n 2
 cda1b7d (HEAD -> extras/firstlast) Add _agnostic/alias.test
 4cd72d7 (shellrcd/master, shellrcd/HEAD, origin/extras/firstlast, master) Add setup_shellrcd_submodules to install.sh
-~~~
+```
 
 Test an update:
 
-~~~sh
+```sh
 shellrcd-update
-~~~
+```
 
 The output will look very similar to the previous time we tested the update.
 
 Test the new script would be picked up either by logging out and back in, or
 taking the simpler route of resourcing your rcfile:
 
-~~~sh
+```sh
 . ~/.zshrc
-~~~
+```
 
 for example:
 
-~~~sh
+```sh
 protomolecule% alias |grep test
 protomolecule% . ~/.zshrc
 protomolecule% alias |grep test
 just-a-test='echo Just A Test'
-~~~
+```
 
 #### A Shell Specific Customisation
 
@@ -403,7 +402,7 @@ The shell specific folders are processed **after** `_agnostic/`.
 
 Let's create a quick addition to the `zsh/` folder now:
 
-~~~sh
+```sh
 # create the new file
 cat <<'EOF' >> ~/.shellrc.d/zsh/50.precmd.tmux
 precmd() { if [ -n "$TMUX" ] ; then tmux rename-window "$(basename $PWD)"; fi; }
@@ -418,7 +417,7 @@ git add zsh/50.precmd.tmux
 git commit -m 'Add zsh/50.precmd.tmux'
 # no need for fpush as there hasn't been any rebasing since we started
 git push
-~~~
+```
 
 ### Redeploying
 
@@ -427,49 +426,49 @@ time preparing the repos.
 
 You can set a couple of variables in your shell and the installer with Do The Right Thing™
 
-~~~sh
+```sh
 export SHELLRCD_EXTRA_BRANCH=extras/firstlast
-export SHELLRCD_EXTRA_REPO=git@github.com:chiselwright/shellrcd-extras-shellbot.git
-~~~
+export SHELLRCD_EXTRA_REPO=git@github.com:chizmw/shellrcd-extras-shellbot.git
+```
 
 you can then run the installation command:
 
-~~~sh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/chiselwright/shellrcd/master/tools/install.sh)"
-~~~
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/chizmw/shellrcd/master/tools/install.sh)"
+```
 
 We can test this with our demo user by performing some cleanup/removal of our
 work so far, then running the instructions above:
 
-~~~sh
+```sh
 # file: "remove existing setup"
 rm -rf ~/.shellrc.d/
-~~~
+```
 
 We'll leave `.bashrc` and `.zshrc` alone as we've not customised these
 further than the standard installation process and we've already seen that
 behaves "sensibly".
 
-~~~sh
+```sh
 # file: "reinstall with information about our extras"
 export SHELLRCD_EXTRA_BRANCH=extras/firstlast
-export SHELLRCD_EXTRA_REPO=git@github.com:chiselwright/shellrcd-extras-shellbot.git
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/chiselwright/shellrcd/master/tools/install.sh)"
-~~~
+export SHELLRCD_EXTRA_REPO=git@github.com:chizmw/shellrcd-extras-shellbot.git
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/chizmw/shellrcd/master/tools/install.sh)"
+```
 
 which produces the following:
 
-~~~text
+```text
 [shellrcd] /home/shellbot/.shellrc.d is not found. Downloading...
 [shellrcd] ...done
-[shellrcd] Configuring extras/firstlast from git@github.com:chiselwright/shellrcd-extras-shellbot.git
+[shellrcd] Configuring extras/firstlast from git@github.com:chizmw/shellrcd-extras-shellbot.git
 Fetching origin
 remote: Enumerating objects: 11, done.
 remote: Counting objects: 100% (11/11), done.
 remote: Compressing objects: 100% (4/4), done.
 remote: Total 8 (delta 4), reused 7 (delta 3), pack-reused 0
 Unpacking objects: 100% (8/8), done.
-From github.com:chiselwright/shellrcd-extras-shellbot
+From github.com:chizmw/shellrcd-extras-shellbot
  * [new branch]      extras/firstlast -> origin/extras/firstlast
 Branch 'extras/firstlast' set up to track remote branch 'extras/firstlast' from 'origin'.
 Switched to a new branch 'extras/firstlast'
@@ -498,20 +497,20 @@ Applying: Add zsh/50.precmd.tmux
 
     Once happy, open a new shell or:
         source /home/shellbot/.zshrc
-~~~
+```
 
 We can also examine the project directory and confirm that we do have two
 remotes (base and extras), with our changes being the most resent in the
 commit history:
 
-~~~sh
+```sh
 protomolecule% cd ~/.shellrc.d
 
 protomolecule% git remote -v
-origin	git@github.com:chiselwright/shellrcd-extras-shellbot.git (fetch)
-origin	git@github.com:chiselwright/shellrcd-extras-shellbot.git (push)
-shellrcd	git://github.com/chiselwright/shellrcd.git (fetch)
-shellrcd	git://github.com/chiselwright/shellrcd.git (push)
+origin	git@github.com:chizmw/shellrcd-extras-shellbot.git (fetch)
+origin	git@github.com:chizmw/shellrcd-extras-shellbot.git (push)
+shellrcd	git://github.com/chizmw/shellrcd.git (fetch)
+shellrcd	git://github.com/chizmw/shellrcd.git (push)
 
 protomolecule% git log --oneline -n 5
 663f607 (HEAD -> extras/firstlast) Add zsh/50.precmd.tmux
@@ -519,7 +518,7 @@ protomolecule% git log --oneline -n 5
 21453e4 (shellrcd/master, shellrcd/HEAD, master) Fix: proper check for "shellrcd-update not a symbolic link"
 4e5dac2 Fix: use path to current shell's RCFILE in welcome message
 8130fea Explicity unset functions ... just in case
-~~~
+```
 
 ### Best Practices
 
@@ -530,29 +529,29 @@ you only want to create alises if a certain exectable is available.
 
 A good pattern for this is with `type`:
 
-~~~sh
+```sh
 if type "someCommand" >/dev/null; then
     # do some stuff
 fi
-~~~
+```
 
 This will extend your setup if you have something installed, and continue
 merrily if it doesn't.
 
 Here are a couple of examples:
 
-~~~sh
+```sh
 # file: "_agnostic/20.alias.generate-password_aws"
 if type "aws" >/dev/null; then
     # spits out a string, ready to use as a password
     # (no longer requires jq to do waht we can do with the command we already have)
     alias generate-password='aws secretsmanager get-random-password --exclude-punctuation --query "RandomPassword" --output text'
 fi
-~~~
+```
 
 or this one that will attempt to install for you:
 
-~~~sh
+```sh
 # file: "_agnostic/98.glow-markdown"
 # do things if NOT installed
 if ! type "glow" >/dev/null; then
@@ -575,7 +574,7 @@ fi
 if type "glow" >/dev/null; then
     alias glow='glow --pager'
 fi
-~~~
+```
 
 #### always `--force-with-lease` when pushing changes after updates
 
@@ -586,37 +585,38 @@ This is fine, because it's only you working in the branch (I hope!)
 
 This does mean you will need to _force push_ any changes you make if there have been upstream changes:
 
-~~~sh
+```sh
 git push --force with lease
-~~~
+```
 
 To make this simpler, set a global alias:
 
-~~~sh
+```sh
 git config --global alias.fpush "push --force-with-lease"
-~~~
+```
 
 and use:
 
-~~~sh
+```sh
 git fpush
-~~~
+```
 
 Read more about `--force-with-lease` in this [StackOverflow post][git-force-push-with-lease].
+
 #### always `--rebase` when pulling changes
 
 You'll get into a world of pain if you `git pull` from your remote without using the `--rebase` option.
 Assuming a version of `git` >= `1.7.9`:
 
-~~~sh
+```sh
 git config --global pull.rebase true
-~~~
+```
 
 Of course you can avoid this in this project and simply run:
 
-~~~sh
+```sh
 shellrdc-update
-~~~
+```
 
 Rebasing by default is a generally good practice to use with any git
 repositories. Read more in
@@ -628,15 +628,15 @@ You can check out the repos mentioned in this article:
 
 - [shellrcd][github-shellrcd]
 - [shellbot's shellrcd-extras][github-shellrcd-extras-shellbot]
-- [Chisel's _agnostic/ scripts][agnostic-folder-chisel]
+- [Chisel's \_agnostic/ scripts][agnostic-folder-chisel]
 
 ## Attributions
 
 - <a href="https://www.freepik.com/free-photos-vectors/computer">Computer vector created by upklyak - www.freepik.com</a>
 
-[agnostic-folder-chisel]: https://github.com/chiselwright/shellrcd-extras-chizcw/tree/extras/chizcw/_agnostic
-[agnostic-folder]: https://github.com/chiselwright/shellrcd/tree/master/_agnostic
+[agnostic-folder-chisel]: https://github.com/chizmw/shellrcd-extras-chizcw/tree/extras/chizcw/_agnostic
+[agnostic-folder]: https://github.com/chizmw/shellrcd/tree/master/_agnostic
 [article-git-rebase]: https://coderwall.com/p/7aymfa/please-oh-please-use-git-pull-rebase
 [git-force-push-with-lease]: https://stackoverflow.com/a/52823955
-[github-shellrcd]: https://github.com/chiselwright/shellrcd/
-[github-shellrcd-extras-shellbot]: https://github.com/chiselwright/shellrcd-extras-shellbot
+[github-shellrcd]: https://github.com/chizmw/shellrcd/
+[github-shellrcd-extras-shellbot]: https://github.com/chizmw/shellrcd-extras-shellbot

@@ -1,19 +1,19 @@
 ---
 layout: post
-title:  "Create New Golang Projects"
+title: "Create New Golang Projects"
 author: Chisel
-date:   2021-02-12 10:23:00 +0100
+date: 2021-02-12 10:23:00 +0100
 categories: [blog, tech]
 tags: [git]
 description: >
-    Continuing our desire to be ~~lazy~~ efficient and automate common tasks,
-    this is about a little helper for any new golang projects we create.
+  Continuing our desire to be ~~lazy~~ efficient and automate common tasks,
+  this is about a little helper for any new golang projects we create.
 image:
-  path:    /assets/img/blog/2021-02-12-new-golang-project-code-gaussian.png
+  path: /assets/img/blog/2021-02-12-new-golang-project-code-gaussian.png
   srcset:
     1920w: /assets/img/blog/2021-02-12-new-golang-project-code-gaussian.png
-    960w:  /assets/img/blog/2021-02-12-new-golang-project-code-gaussian@0,5x.png
-    480w:  /assets/img/blog/2021-02-12-new-golang-project-code-gaussian@0,25x.png
+    960w: /assets/img/blog/2021-02-12-new-golang-project-code-gaussian@0,5x.png
+    480w: /assets/img/blog/2021-02-12-new-golang-project-code-gaussian@0,25x.png
 ---
 
 {% include read-estimate.md %}
@@ -21,11 +21,10 @@ image:
 Continuing our desire to be ~~lazy~~ efficient and automate common tasks,
 this is about a little helper for any new golang projects we create.
 
-
 <!--more-->
 
-* this unordered seed list will be replaced by the toc
-{:toc}
+- this unordered seed list will be replaced by the toc
+  {:toc}
 
 ## The Explanation
 
@@ -46,7 +45,7 @@ automatically.
 
 Save this into your path (e.g. `~/bin`).
 
-~~~~bash
+```bash
 # file: "new-golang-project"
 #!/bin/bash
 set -euo pipefail
@@ -64,8 +63,8 @@ trimname="${trimname//-/}"
 
 # set a couple of things we may wish to make more configurable down the line:
 
-## a github username (default: chiselwright)
-githubUsername="${GITHUB_USERNAME:-chiselwright}"
+## a github username (default: chizmw)
+githubUsername="${GITHUB_USERNAME:-chizmw}"
 
 ## the module name prefix (default: github.com/${githubuserName})
 gomodPrefix="${NEWGO_MODPREFIX:-github.com/${githubUsername}/}"
@@ -155,7 +154,7 @@ fi
 if type code >/dev/null; then
 	code -g ./cmd/cli-client/main.go "${pathPrefix}/${reponame}"
 fi
-~~~~
+```
 
 ## Assumptions
 
@@ -169,20 +168,20 @@ You can read more about this in [the blog entry]({% post_url
 
 If you really don't want this, you can probably just replace the line with:
 
-~~~sh
+```sh
 git init
-~~~
+```
 
 ### It assumes you're releasing to github, as me
 
 The module name is automatically written in a "github friendly" manner. For
-example `flizz` becomes `module github.com/chiselwright/go-flizz`
+example `flizz` becomes `module github.com/chizmw/go-flizz`
 
 You can alter the prefix by setting the following in your shell:
 
-~~~sh
+```sh
 export GITHUB_USERNAME="myusername"
-~~~
+```
 
 ### It assumes you're using `~/development`
 
@@ -192,13 +191,12 @@ all clone actions.
 If you prefer to have your code somewhere else you can set a variable in your
 shell:
 
-~~~sh
+```sh
 export CLONEINTO_ROOT=/path/to/your/preference
-~~~
+```
 
 This value was chosen to match can read more about this in [the
 `clone-into-dir` post]({% post_url /blog/2021-02-12-new-golang-project %}).
-
 
 ## Source
 
@@ -212,5 +210,4 @@ for artistic brevity.
 
 ![the command in action](/assets/img/blog/2021-02-12-new-golang-project-in-action.png)
 
-
-[github-homebin-newgolangproject]: https://github.com/chiselwright/shellrcd-extras-chizcw/blob/extras/chizcw/home-bin/new-golang-project
+[github-homebin-newgolangproject]: https://github.com/chizmchizmwshellrcd-extras-chizcw/blob/extras/chizcw/home-bin/new-golang-project

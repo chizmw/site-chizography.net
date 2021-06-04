@@ -27,7 +27,7 @@ chisel:
   # Rearrange to change the order in which they appear
   social:
     twitter: chizmw
-    github: chiselwright
+    github: chizmw
     # email:           <mail@domain.tld>
     rss: https://chisel.malik-wright.uk/feed.xml
     facebook: chiselmalikwright
@@ -38,7 +38,7 @@ chisel:
     # vine:            <username>
     # spotify:         <user>/<number>
     # soundcloud:      <username>
-    lastfm: chiselwright
+    lastfm: chizmw
     instagram: chizmw
     # flickr:          <string@string>
     # 500px:           <username>
