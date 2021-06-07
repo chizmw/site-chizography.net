@@ -1,19 +1,19 @@
 ---
 layout: post
-title:  "Plex Database Repair on an NVIDIA SHIELD Pro"
+title: "Plex Database Repair on an NVIDIA SHIELD Pro"
 author: Chisel
 categories: [blog, tech]
 description: >
   Sometimes you'll find you have a corrupt database on your media server.
   This article should get you back up and running.
 tags: [plex, nvidia, shield, database, repair, sqlite, howto]
-date:   2020-11-28 02:03:04 +0000
+date: 2020-11-28 02:03:04 +0000
 image:
-  path:    /assets/img/blog/2020-11-28-plex-database-repair-benjamin-lehman-GNyjCePVRs8-unsplash.jpg
+  path: /assets/img/blog/2020-11-28-plex-database-repair-benjamin-lehman-GNyjCePVRs8-unsplash.jpg
   srcset:
     1920w: /assets/img/blog/2020-11-28-plex-database-repair-benjamin-lehman-GNyjCePVRs8-unsplash.jpg
-    960w:  /assets/img/blog/2020-11-28-plex-database-repair-benjamin-lehman-GNyjCePVRs8-unsplash@0,5x.jpg
-    480w:  /assets/img/blog/2020-11-28-plex-database-repair-benjamin-lehman-GNyjCePVRs8-unsplash@0,25x.jpg
+    960w: /assets/img/blog/2020-11-28-plex-database-repair-benjamin-lehman-GNyjCePVRs8-unsplash@0,5x.jpg
+    480w: /assets/img/blog/2020-11-28-plex-database-repair-benjamin-lehman-GNyjCePVRs8-unsplash@0,25x.jpg
 ---
 
 {% include read-estimate.md %}
@@ -25,12 +25,16 @@ NVIDIA SHIELD Pro device.
 
 <!--more-->
 
-* this unordered seed list will be replaced by the toc
-{:toc}
+- this unordered seed list will be replaced by the toc
+  {:toc}
 
 ## Prerequisites
 
 ### sqlite3
+
+In 2021 Plex changed how they use SQLite and currently require a [customised
+sqlite][plex-forum-comment] to run the `PRAGMA integrity_check` step.
+{:.note title="Attention"}
 
 You must have `sqlite3` installed to perform the integrity check and repair
 process.
@@ -38,9 +42,9 @@ process.
 If you're on a Mac, I strongly recommend [homebrew][mac-homebrew] and it's as
 simple as:
 
-~~~sh
+```sh
 brew install sqlite
-~~~
+```
 
 ### Library on external storage
 
@@ -51,7 +55,13 @@ If you haven't already done this, there are [instructions
 online][plex-library-on-usb] and I've had no problems with a [SanDisk Ultra
 Fit 128 GB][amazon-sandisk-usb]
 
-After a 48-hour period in early 2021 where I would return to the media server and discover that ther USB was flagged as corrupt I replaced the USB stick mentioned above with a standard [SanDisk Ultra 128 GB][amazon-usb-sandisk-ultra]
+After a 48-hour period in early 2021 where I would return to the media server
+and discover that ther USB was flagged as corrupt I replaced the USB stick
+mentioned above with a standard [SanDisk Ultra 128 GB][amazon-usb-sandisk-ultra]
+{:.note title="Update"}
+
+After five months the _SanDisk Ultra 128 GB_ failed; I'm now trying the server
+with a [SanDisk Extreme PRO 128 GB][amazon-usb-sandisk-pro]
 {:.note title="Update"}
 
 ## Shutdown Cleanly
@@ -91,38 +101,38 @@ If you're in any doubt how to perform this please read the
 Once it's mounted, open a terminal window and verify where the device was
 mounted:
 
-~~~sh
+```sh
 mount
-~~~
+```
 
 Change to that directory:
 
-~~~sh
+```sh
 # this will vary based on your system and USB stick
 cd /Volumes/SanDisk128G
-~~~
+```
 
 From there we'll use a little bit of magic to take us to the Databases
 directory:
 
-~~~sh
+```sh
 cd "$(find . -type d -name 'Plex Media Server' -prune)/Plug-in Support/Databases"
-~~~
+```
 
 Confirm you're in the correct location. You should see something that looks
 like this:
 
-~~~sh
+```sh
 ❯ ls -1
 com.plexapp.plugins.library.blobs.db
 com.plexapp.plugins.library.blobs.db-shm
 com.plexapp.plugins.library.blobs.db-wal
 com.plexapp.plugins.library.db
-~~~
+```
 
 #### Check For Corruption
 
-~~~sh
+```sh
 # backup the library
 cp com.plexapp.plugins.library.db com.plexapp.plugins.library.db.original
 
@@ -134,17 +144,18 @@ sqlite3 com.plexapp.plugins.library.db "DELETE from schema_migrations where vers
 
 # perform the integrity check
 sqlite3 com.plexapp.plugins.library.db "PRAGMA integrity_check"
-~~~
+```
 
 On my currently corrupted database the final command outputs the following:
-~~~sh
+
+```sh
 ❯ sqlite3 com.plexapp.plugins.library.db "PRAGMA integrity_check"
 *** in database main ***
 Page 22634: btreeInitPage() returns error code 11
 Page 22635: btreeInitPage() returns error code 11
 Page 22636: btreeInitPage() returns error code 11
 Error: database disk image is malformed
-~~~
+```
 
 ### Run The Repair
 
@@ -152,7 +163,7 @@ The official page repeats the "backup, drop index, delete schema migration"
 steps. I'm relying on you working through this page in order, so there's no
 need to do this twice.
 
-~~~sh
+```sh
 # dump the current database
 sqlite3 com.plexapp.plugins.library.db .dump > dump.sql
 
@@ -161,14 +172,14 @@ rm com.plexapp.plugins.library.db
 
 # create a new version of the database from the dump
 sqlite3 com.plexapp.plugins.library.db < dump.sql
-~~~
+```
 
 Because we're working on USB storage we can skip the `chown` step in the
 official documents.
 
 ### Post Repair Steps
 
-~~~sh
+```sh
 # keep the original (corrupt) database safe for now
 mv *.original $HOME
 
@@ -177,15 +188,16 @@ mv dump.sql $HOME
 
 # remove some unnecessary files
 rm -fv com.plexapp.plugins.library.db-shm com.plexapp.plugins.library.db-wal
-~~~
+```
+
 You should now eject/unmount your USB device.
 
 Before you attempt this, you should leave the current working directory:
 
-~~~sh
+```sh
 # I'm being explicit about the location here but 'cd' on its own works
 cd $HOME
-~~~
+```
 
 **Eject your USB device**
 
@@ -249,11 +261,13 @@ process.
 
 - <span>Photo by <a href="https://unsplash.com/@benjaminlehman?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">benjamin lehman</a> on <a href="https://unsplash.com/s/photos/database?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
-[amazon-sandisk-usb]:       https://smile.amazon.co.uk/gp/product/B07855LJ99/
+[amazon-sandisk-usb]: https://smile.amazon.co.uk/gp/product/B07855LJ99/
 [amazon-usb-sandisk-ultra]: https://smile.amazon.co.uk/gp/product/B00P8XQPY4/
-[bsg-imdb]:                 https://www.imdb.com/title/tt0407362/
-[bsg-razor]:                https://www.imdb.com/title/tt0991178/
-[bsg-viewing-order]:        https://thunderpeel2001.blogspot.com/2010/02/battlestar-galactica-viewing-order.html
-[mac-homebrew]:             https://brew.sh/
-[plex-library-on-usb]:      https://support.plex.tv/articles/moving-server-data-storage-location-on-nvidia-shield/
-[plex-support-corrupt]:     https://support.plex.tv/articles/201100678-repair-a-corrupt-database/
+[amazon-usb-sandisk-pro]: https://smile.amazon.co.uk/gp/product/B01MU8TZRV/
+[bsg-imdb]: https://www.imdb.com/title/tt0407362/
+[bsg-razor]: https://www.imdb.com/title/tt0991178/
+[bsg-viewing-order]: https://thunderpeel2001.blogspot.com/2010/02/battlestar-galactica-viewing-order.html
+[mac-homebrew]: https://brew.sh/
+[plex-forum-comment]: https://forums.plex.tv/t/database-repair-error-no-such-collation-sequence-icu-root/715808/2
+[plex-library-on-usb]: https://support.plex.tv/articles/moving-server-data-storage-location-on-nvidia-shield/
+[plex-support-corrupt]: https://support.plex.tv/articles/201100678-repair-a-corrupt-database/
