@@ -1,0 +1,20 @@
+version: 1
+frontend:
+  phases:
+    build:
+      commands:
+        - echo $PATH
+        - which ruby
+        - which gem
+        - which bundle
+        - ruby --version
+        - gem --version
+        - bundle install
+        - bundle exec jekyll --version
+        - bundle exec jekyll build -s source
+  artifacts:
+    baseDirectory: _site
+    files:
+      - '**/*'
+  cache:
+    paths: []
