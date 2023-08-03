@@ -26,7 +26,6 @@ chisel:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    twitter: chizmw
     github: chizmw
     # email:           <mail@domain.tld>
     rss: https://chisel.malik-wright.uk/feed.xml

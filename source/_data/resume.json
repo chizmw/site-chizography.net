@@ -12,11 +12,6 @@
     "label": "Software, Infrastructure & Operations",
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "chizmw",
-        "url": "http://twitter.com/chizmw"
-      },
-      {
         "network": "Instagram",
         "username": "chizmw",
         "url": "https://www.instagram.com/chizmw/"
@@ -251,11 +246,7 @@
     {
       "name": "SaaS",
       "level": "Professional",
-      "keywords": [
-        "OpsGenie",
-        "blameless.com",
-        "Gitlab (self-hosted)"
-      ]
+      "keywords": ["OpsGenie", "blameless.com", "Gitlab (self-hosted)"]
     },
     {
       "name": "Languages",
@@ -272,12 +263,7 @@
     {
       "name": "Databases & Storage",
       "level": "Professional",
-      "keywords": [
-        "PostgreSQL",
-        "MySQL",
-        "neo4j",
-        "Solr"
-      ]
+      "keywords": ["PostgreSQL", "MySQL", "neo4j", "Solr"]
     },
     {
       "name": "Tooling",
@@ -295,41 +281,22 @@
     {
       "name": "Web Servers",
       "level": "Intermediate",
-      "keywords": [
-        "Apache 1.x",
-        "Apache 2.x",
-        "nginx"
-      ]
+      "keywords": ["Apache 1.x", "Apache 2.x", "nginx"]
     },
     {
       "name": "Amazon Web Services (AWS)",
       "level": "Intermediate",
-      "keywords": [
-        "EC2",
-        "ECS",
-        "IAM",
-        "RDS",
-        "S3",
-        "SSM"
-      ]
+      "keywords": ["EC2", "ECS", "IAM", "RDS", "S3", "SSM"]
     },
     {
       "name": "Websites",
       "level": "Intermediate",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "jekyll"
-      ]
+      "keywords": ["HTML", "CSS", "jekyll"]
     },
     {
       "name": "Health & Safety",
       "level": "Intermediate",
-      "keywords": [
-        "Fire Safety",
-        "DSE Assessments",
-        "Risk Assessments"
-      ]
+      "keywords": ["Fire Safety", "DSE Assessments", "Risk Assessments"]
     }
   ],
   "languages": [
@@ -353,12 +320,7 @@
   "interests": [
     {
       "name": "Tabletop Gaming",
-      "keywords": [
-        "Board Games",
-        "Card Games",
-        "Social Deduction",
-        "Design"
-      ]
+      "keywords": ["Board Games", "Card Games", "Social Deduction", "Design"]
     }
   ],
   "references": [
